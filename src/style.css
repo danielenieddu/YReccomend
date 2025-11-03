@@ -1,0 +1,223 @@
+/* === Reset + base === */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: "Poppins", "Segoe UI", system-ui, Arial, sans-serif;
+  /* Sfondo scuro per effetto NEON */
+  background: #111827; 
+  color: #f3f4f6; /* Testo chiaro */
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  /* Header scuro e definito */
+  background: #1f2937;
+  border-bottom: 1px solid #374151; 
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,.5);
+  z-index: 20;
+  position: relative;
+}
+
+header h1 {
+  font-size: 1.8em;
+  margin: 0;
+  color: #40e0d0; /* Colore d'accento Neon */
+}
+
+.controls {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+.controls label {
+  color: #9ca3af;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* === Stili generici per i controlli UI (Stile NEON) === */
+.ui-btn {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s, box-shadow 0.2s;
+  font-size: 13px;
+}
+
+.ui-btn:hover:not([disabled]) {
+  background-color: #2563eb;
+  transform: translateY(-1px);
+  /* Effetto glow al hover */
+  box-shadow: 0 0 10px rgba(60, 130, 250, 0.6); 
+}
+
+.ui-btn:disabled {
+  background-color: #4b5563;
+  cursor: not-allowed;
+  color: #9ca3af;
+}
+
+.ui-btn-small {
+    padding: 4px 8px;
+}
+
+.ui-select {
+    padding: 6px;
+    border-radius: 4px;
+    /* Input più scuro */
+    border: 1px solid #4b5563; 
+    background-color: #374151;
+    color: #fff;
+}
+
+/* Stili per i pannelli delle preferenze e filtri */
+#filtersPanel, #prefsPanel {
+    /* Pannelli scuri e bordi neon */
+    background: #1f2937 !important;
+    border: 1px solid #4b5563 !important;
+    box-shadow: 0 4px 14px rgba(0,0,0,.5) !important;
+    color: #f3f4f6 !important;
+    font-size: 14px !important;
+}
+
+#filtersPanel .ui-btn, #prefsPanel .ui-btn {
+    border: 1px solid #40e0d0;
+    background-color: #0b3749;
+    color: #40e0d0;
+}
+
+/* Stili specifici per i pannelli (dal tuo codice originale, per layout) */
+.pref-row {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 6px;
+    margin-bottom: 8px;
+    align-items: center;
+}
+
+.pref-row-slider {
+    display: grid;
+    grid-template-columns: 100px 1fr 36px;
+    gap: 6px;
+    align-items: center;
+    margin-bottom: 6px;
+}
+.pref-row-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 10px;
+}
+
+
+/* === Area del Grafo === */
+#chart {
+  width: 100%;
+  height: calc(100vh - 64px);
+}
+
+/* === Infocard laterale === */
+aside#infocard {
+  position: absolute;
+  right: 24px;
+  top: 80px;
+  width: 320px;
+  /* Sfondo scuro e bordo accento NEON */
+  background: #1f2937; 
+  border: 2px solid #40e0d0;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(64, 224, 208, 0.2); 
+  color: #f3f4f6;
+  padding: 16px;
+  pointer-events: auto; 
+  transition: opacity 0.3s ease-in-out;
+  z-index: 100; /* Assicura che sia sopra i pannelli */
+}
+aside#infocard h3 {
+    color: #ffea00; /* Titoli Giallo Brillante */
+}
+/* Stile per la 'X' */
+.infocard-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  color: #9ca3af;
+  z-index: 101; /* Assicura che sia cliccabile */
+}
+.infocard-close:hover { 
+  color: #40e0d0; 
+}
+
+/* === Tooltip elegante === */
+.tooltip {
+  position: absolute;
+  background: rgba(10, 10, 10, 0.95);
+  color: #f3f4f6;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  pointer-events: none;
+  border: 1px solid #40e0d0;
+  box-shadow: 0 0 8px rgba(64, 224, 208, 0.4);
+  z-index: 9999;
+}
+
+/* === Nodi === */
+.node {
+  /* La sfumatura D3 ora conferisce un aspetto tridimensionale al riempimento */
+  transition: transform 120ms ease-out, opacity 300ms ease-in-out;
+}
+
+/* Aura morbida attorno ai nodi (ora un effetto NEON) */
+.node circle.aura {
+  filter: blur(10px); 
+  pointer-events: none;          
+  transition: stroke-opacity 300ms;
+}
+
+/* Etichette: la nitidezza è data rimuovendo lo stroke nel JS */
+.node-label {
+    fill: #f3f4f6; /* Colore testo chiaro */
+    stroke: none;
+    font-weight: 500; /* Leggermente più pesante per leggibilità */
+}
+
+/* === Mini-Grafo nella Infocard === */
+#miniGraph {
+    border: 1px solid #374151; /* Bordo più scuro per il tema */
+    border-radius: 8px;
+    padding: 5px;
+}
+/* Il colore del testo del mini-grafo è ora gestito in JS per robustezza */
+#miniGraph .link-label {
+    font-weight: 500;
+}
+
+
+/* === Legenda + pannelli === */
+.legend {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  background: #1f2937;
+  border: 1px solid #4b5563;
+  color: #f3f4f6;
+  border-radius: 8px;
+  padding: 10px 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.3);
+}

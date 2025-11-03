@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <title>KG Recs UI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/src/style.css" />
+  <script defer src="https://d3js.org/d3.v7.min.js"></script>
+  <script defer src="/src/app.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🎬 Suggerimenti personalizzati</h1>
+    <div class="controls">
+      <label>Utente: <input id="userId" type="number" min="1" value="1"/></label>
+      <label>Top-K: <input id="topK" type="range" min="5" max="50" value="20" /> <span id="topKVal">20</span></label>
+      <button id="reload">Aggiorna</button>
+    </div>
+  </header>
+  <main>
+    <div id="chart"></div>
+    <aside id="infocard" class="hidden"></aside>
+  </main>
+</body>
+</html>

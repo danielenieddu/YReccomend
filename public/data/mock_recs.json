@@ -1,0 +1,1439 @@
+{
+  "user_id": 1,
+  "generated_at": "2025-11-02T18:09:17.506309",
+  "recommendations": [
+    {
+      "item_id": 1,
+      "label": "Inception (2010)",
+      "type": "movie",
+      "score": 0.93,
+      "explanation": {
+        "brief": "Attori in comune, Regista correlato",
+        "percent": 93.0,
+        "shared_entities": [
+          {
+            "type": "actor",
+            "label": "Leonardo DiCaprio"
+          },
+          {
+            "type": "director",
+            "label": "Christopher Nolan"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            1
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 2,
+      "label": "Interstellar (2014)",
+      "type": "movie",
+      "score": 0.97,
+      "explanation": {
+        "brief": "Regista correlato, Genere simile",
+        "percent": 97.0,
+        "shared_entities": [
+          {
+            "type": "director",
+            "label": "Christopher Nolan"
+          },
+          {
+            "type": "genre",
+            "label": "Sci-Fi"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            2
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 3,
+      "label": "The Dark Knight (2008)",
+      "type": "movie",
+      "score": 0.99,
+      "explanation": {
+        "brief": "Regista correlato, Genere simile",
+        "percent": 99.0,
+        "shared_entities": [
+          {
+            "type": "director",
+            "label": "Christopher Nolan"
+          },
+          {
+            "type": "genre",
+            "label": "Action"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            3
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 4,
+      "label": "Oppenheimer (2023)",
+      "type": "movie",
+      "score": 0.94,
+      "explanation": {
+        "brief": "Regista correlato, Attori in comune",
+        "percent": 94.0,
+        "shared_entities": [
+          {
+            "type": "director",
+            "label": "Christopher Nolan"
+          },
+          {
+            "type": "actor",
+            "label": "Cillian Murphy"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            4
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 5,
+      "label": "The Wolf of Wall Street (2013)",
+      "type": "movie",
+      "score": 0.91,
+      "explanation": {
+        "brief": "Attori in comune, Regista correlato",
+        "percent": 91.0,
+        "shared_entities": [
+          {
+            "type": "actor",
+            "label": "Leonardo DiCaprio"
+          },
+          {
+            "type": "director",
+            "label": "Martin Scorsese"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            5
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 6,
+      "label": "Shutter Island (2010)",
+      "type": "movie",
+      "score": 0.85,
+      "explanation": {
+        "brief": "Attori in comune, Regista correlato",
+        "percent": 85.0,
+        "shared_entities": [
+          {
+            "type": "actor",
+            "label": "Leonardo DiCaprio"
+          },
+          {
+            "type": "director",
+            "label": "Martin Scorsese"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            6
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 7,
+      "label": "The Revenant (2015)",
+      "type": "movie",
+      "score": 0.82,
+      "explanation": {
+        "brief": "Attori in comune, Genere simile",
+        "percent": 82.0,
+        "shared_entities": [
+          {
+            "type": "actor",
+            "label": "Leonardo DiCaprio"
+          },
+          {
+            "type": "genre",
+            "label": "Adventure"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            7
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 8,
+      "label": "Once Upon a Time in Hollywood (2019)",
+      "type": "movie",
+      "score": 0.72,
+      "explanation": {
+        "brief": "Attori in comune, Regista correlato",
+        "percent": 72.0,
+        "shared_entities": [
+          {
+            "type": "actor",
+            "label": "Leonardo DiCaprio"
+          },
+          {
+            "type": "director",
+            "label": "Quentin Tarantino"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            8
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 9,
+      "label": "Pulp Fiction (1994)",
+      "type": "movie",
+      "score": 0.88,
+      "explanation": {
+        "brief": "Regista correlato, Genere simile",
+        "percent": 88.0,
+        "shared_entities": [
+          {
+            "type": "director",
+            "label": "Quentin Tarantino"
+          },
+          {
+            "type": "genre",
+            "label": "Crime"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            9
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 10,
+      "label": "Fight Club (1999)",
+      "type": "movie",
+      "score": 0.78,
+      "explanation": {
+        "brief": "Genere simile",
+        "percent": 78.0,
+        "shared_entities": [
+          {
+            "type": "genre",
+            "label": "Thriller"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            10
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 11,
+      "label": "Forrest Gump (1994)",
+      "type": "movie",
+      "score": 0.68,
+      "explanation": {
+        "brief": "Genere simile",
+        "percent": 68.0,
+        "shared_entities": [
+          {
+            "type": "genre",
+            "label": "Drama"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            11
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 12,
+      "label": "The Godfather (1972)",
+      "type": "movie",
+      "score": 0.95,
+      "explanation": {
+        "brief": "Regista correlato, Genere simile",
+        "percent": 95.0,
+        "shared_entities": [
+          {
+            "type": "director",
+            "label": "Francis Ford Coppola"
+          },
+          {
+            "type": "genre",
+            "label": "Crime"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            12
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 13,
+      "label": "The Irishman (2019)",
+      "type": "movie",
+      "score": 0.79,
+      "explanation": {
+        "brief": "Attori in comune, Regista correlato",
+        "percent": 79.0,
+        "shared_entities": [
+          {
+            "type": "actor",
+            "label": "Robert De Niro"
+          },
+          {
+            "type": "director",
+            "label": "Martin Scorsese"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            13
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 14,
+      "label": "Taxi Driver (1976)",
+      "type": "movie",
+      "score": 0.89,
+      "explanation": {
+        "brief": "Regista correlato, Attori in comune",
+        "percent": 89.0,
+        "shared_entities": [
+          {
+            "type": "actor",
+            "label": "Robert De Niro"
+          },
+          {
+            "type": "director",
+            "label": "Martin Scorsese"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            14
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 15,
+      "label": "Django Unchained (2012)",
+      "type": "movie",
+      "score": 0.84,
+      "explanation": {
+        "brief": "Regista correlato, Genere simile",
+        "percent": 84.0,
+        "shared_entities": [
+          {
+            "type": "director",
+            "label": "Quentin Tarantino"
+          },
+          {
+            "type": "genre",
+            "label": "Western"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            15
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 16,
+      "label": "The Matrix (1999)",
+      "type": "movie",
+      "score": 0.92,
+      "explanation": {
+        "brief": "Genere simile",
+        "percent": 92.0,
+        "shared_entities": [
+          {
+            "type": "genre",
+            "label": "Sci-Fi"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            16
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 17,
+      "label": "The Matrix Reloaded (2003)",
+      "type": "movie",
+      "score": 0.81,
+      "explanation": {
+        "brief": "Saga correlata",
+        "percent": 81.0,
+        "shared_entities": [
+          {
+            "type": "series",
+            "label": "The Matrix"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            17
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 18,
+      "label": "Titanic (1997)",
+      "type": "movie",
+      "score": 0.87,
+      "explanation": {
+        "brief": "Attori in comune, Genere simile",
+        "percent": 87.0,
+        "shared_entities": [
+          {
+            "type": "actor",
+            "label": "Leonardo DiCaprio"
+          },
+          {
+            "type": "genre",
+            "label": "Romance"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            18
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 19,
+      "label": "Gladiator (2000)",
+      "type": "movie",
+      "score": 0.76,
+      "explanation": {
+        "brief": "Genere simile",
+        "percent": 76.0,
+        "shared_entities": [
+          {
+            "type": "genre",
+            "label": "Historical"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            19
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            19
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 20,
+      "label": "Joker (2019)",
+      "type": "movie",
+      "score": 0.89,
+      "explanation": {
+        "brief": "Attori in comune, Genere simile",
+        "percent": 89.0,
+        "shared_entities": [
+          {
+            "type": "actor",
+            "label": "Robert De Niro"
+          },
+          {
+            "type": "genre",
+            "label": "Drama"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            20
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 21,
+      "label": "Barbie (2023)",
+      "type": "movie",
+      "score": 0.52,
+      "explanation": {
+        "brief": "Genere differente",
+        "percent": 52.0,
+        "shared_entities": [
+          {
+            "type": "genre",
+            "label": "Comedy"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            21
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            21
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 22,
+      "label": "The Batman (2022)",
+      "type": "movie",
+      "score": 0.83,
+      "explanation": {
+        "brief": "Regista correlato, Genere simile",
+        "percent": 83.0,
+        "shared_entities": [
+          {
+            "type": "director",
+            "label": "Matt Reeves"
+          },
+          {
+            "type": "genre",
+            "label": "Action"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            22
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 23,
+      "label": "Whiplash (2014)",
+      "type": "movie",
+      "score": 0.74,
+      "explanation": {
+        "brief": "Genere simile",
+        "percent": 74.0,
+        "shared_entities": [
+          {
+            "type": "genre",
+            "label": "Drama"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            23
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            23
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 24,
+      "label": "La La Land (2016)",
+      "type": "movie",
+      "score": 0.65,
+      "explanation": {
+        "brief": "Regista correlato",
+        "percent": 65.0,
+        "shared_entities": [
+          {
+            "type": "director",
+            "label": "Damien Chazelle"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            24
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 25,
+      "label": "Gone Girl (2014)",
+      "type": "movie",
+      "score": 0.69,
+      "explanation": {
+        "brief": "Regista correlato",
+        "percent": 69.0,
+        "shared_entities": [
+          {
+            "type": "director",
+            "label": "David Fincher"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            25
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 26,
+      "label": "Seven (1995)",
+      "type": "movie",
+      "score": 0.93,
+      "explanation": {
+        "brief": "Regista correlato, Genere simile",
+        "percent": 93.0,
+        "shared_entities": [
+          {
+            "type": "director",
+            "label": "David Fincher"
+          },
+          {
+            "type": "genre",
+            "label": "Thriller"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            26
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            26
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 27,
+      "label": "Parasite (2019)",
+      "type": "movie",
+      "score": 0.91,
+      "explanation": {
+        "brief": "Genere simile",
+        "percent": 91.0,
+        "shared_entities": [
+          {
+            "type": "genre",
+            "label": "Thriller"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            27
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            27
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 28,
+      "label": "Everything Everywhere All at Once (2022)",
+      "type": "movie",
+      "score": 0.82,
+      "explanation": {
+        "brief": "Genere simile",
+        "percent": 82.0,
+        "shared_entities": [
+          {
+            "type": "genre",
+            "label": "Sci-Fi"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            28
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            28
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 29,
+      "label": "The Social Network (2010)",
+      "type": "movie",
+      "score": 0.75,
+      "explanation": {
+        "brief": "Regista correlato",
+        "percent": 75.0,
+        "shared_entities": [
+          {
+            "type": "director",
+            "label": "David Fincher"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            29
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            29
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 30,
+      "label": "The Grand Budapest Hotel (2014)",
+      "type": "movie",
+      "score": 0.78,
+      "explanation": {
+        "brief": "Regista correlato",
+        "percent": 78.0,
+        "shared_entities": [
+          {
+            "type": "director",
+            "label": "Wes Anderson"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            30
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            30
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 31,
+      "label": "Moonrise Kingdom (2012)",
+      "type": "movie",
+      "score": 0.61,
+      "explanation": {
+        "brief": "Regista correlato",
+        "percent": 61.0,
+        "shared_entities": [
+          {
+            "type": "director",
+            "label": "Wes Anderson"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            31
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 32,
+      "label": "Arrival (2016)",
+      "type": "movie",
+      "score": 0.88,
+      "explanation": {
+        "brief": "Regista correlato, Genere simile",
+        "percent": 88.0,
+        "shared_entities": [
+          {
+            "type": "director",
+            "label": "Denis Villeneuve"
+          },
+          {
+            "type": "genre",
+            "label": "Sci-Fi"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            32
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            32
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 33,
+      "label": "Sicario (2015)",
+      "type": "movie",
+      "score": 0.77,
+      "explanation": {
+        "brief": "Regista correlato",
+        "percent": 77.0,
+        "shared_entities": [
+          {
+            "type": "director",
+            "label": "Denis Villeneuve"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            33
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            33
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 34,
+      "label": "Prisoners (2013)",
+      "type": "movie",
+      "score": 0.79,
+      "explanation": {
+        "brief": "Regista correlato, Genere simile",
+        "percent": 79.0,
+        "shared_entities": [
+          {
+            "type": "director",
+            "label": "Denis Villeneuve"
+          },
+          {
+            "type": "genre",
+            "label": "Thriller"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            34
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            34
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 35,
+      "label": "The Shawshank Redemption (1994)",
+      "type": "movie",
+      "score": 0.92,
+      "explanation": {
+        "brief": "Genere simile",
+        "percent": 92.0,
+        "shared_entities": [
+          {
+            "type": "genre",
+            "label": "Drama"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            35
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            35
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 36,
+      "label": "The Green Mile (1999)",
+      "type": "movie",
+      "score": 0.85,
+      "explanation": {
+        "brief": "Genere simile",
+        "percent": 85.0,
+        "shared_entities": [
+          {
+            "type": "genre",
+            "label": "Drama"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            36
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            36
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 37,
+      "label": "Mad Max: Fury Road (2015)",
+      "type": "movie",
+      "score": 0.9,
+      "explanation": {
+        "brief": "Genere simile",
+        "percent": 90.0,
+        "shared_entities": [
+          {
+            "type": "genre",
+            "label": "Action"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            37
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            37
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 38,
+      "label": "Blade Runner 2049 (2017)",
+      "type": "movie",
+      "score": 0.95,
+      "explanation": {
+        "brief": "Regista correlato, Genere simile",
+        "percent": 95.0,
+        "shared_entities": [
+          {
+            "type": "director",
+            "label": "Denis Villeneuve"
+          },
+          {
+            "type": "genre",
+            "label": "Sci-Fi"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            38
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            38
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 39,
+      "label": "Her (2013)",
+      "type": "movie",
+      "score": 0.72,
+      "explanation": {
+        "brief": "Genere simile",
+        "percent": 72.0,
+        "shared_entities": [
+          {
+            "type": "genre",
+            "label": "Romance"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            39
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            39
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 40,
+      "label": "The Imitation Game (2014)",
+      "type": "movie",
+      "score": 0.78,
+      "explanation": {
+        "brief": "Genere simile",
+        "percent": 78.0,
+        "shared_entities": [
+          {
+            "type": "genre",
+            "label": "Biography"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            40
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            40
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 41,
+      "label": "A Beautiful Mind (2001)",
+      "type": "movie",
+      "score": 0.74,
+      "explanation": {
+        "brief": "Genere simile",
+        "percent": 74.0,
+        "shared_entities": [
+          {
+            "type": "genre",
+            "label": "Drama"
+          }
+        ],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            1
+          ],
+          [
+            "RELATED",
+            "genre",
+            41
+          ],
+          [
+            "ASSOCIATED_WITH",
+            "movie",
+            41
+          ]
+        ]
+      }
+    }
+  ]
+}
