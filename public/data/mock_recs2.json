@@ -1,14 +1,15 @@
 {
   "user_id": 2,
-  "generated_at": "2025-12-18T17:17:02.643913",
+  "generated_at": "2025-12-18T16:44:51.826954",
   "recommendations": [
     {
       "item_id": 607,
       "label": "Magnificent Seven, The",
       "type": "movie",
-      "score": 0.6,
+      "score": 0.266,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 60.0,
         "shared_entities": [],
         "path_example": [
           [
@@ -38,9 +39,10 @@
       "item_id": 490,
       "label": "Lost Highway",
       "type": "movie",
-      "score": 0.621,
+      "score": 0.278,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 62.1,
         "shared_entities": [],
         "path_example": [
           [
@@ -70,9 +72,10 @@
       "item_id": 184,
       "label": "Wag the Dog",
       "type": "movie",
-      "score": 0.655,
+      "score": 0.298,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 65.5,
         "shared_entities": [],
         "path_example": [
           [
@@ -102,9 +105,10 @@
       "item_id": 138,
       "label": "Bonnie and Clyde",
       "type": "movie",
-      "score": 0.665,
+      "score": 0.303,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 66.5,
         "shared_entities": [],
         "path_example": [
           [
@@ -134,9 +138,10 @@
       "item_id": 558,
       "label": "Room with a View, A",
       "type": "movie",
-      "score": 0.712,
+      "score": 0.33,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 71.2,
         "shared_entities": [],
         "path_example": [
           [
@@ -166,9 +171,10 @@
       "item_id": 237,
       "label": "Singin' in the Rain",
       "type": "movie",
-      "score": 0.724,
+      "score": 0.338,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 72.4,
         "shared_entities": [],
         "path_example": [
           [
@@ -198,9 +204,10 @@
       "item_id": 505,
       "label": "Secrets & Lies",
       "type": "movie",
-      "score": 0.726,
+      "score": 0.339,
       "explanation": {
         "brief": "Connessione tematica rilevata.",
+        "percent": 72.6,
         "shared_entities": [
           {
             "type": "entity",
@@ -235,9 +242,10 @@
       "item_id": 408,
       "label": "Beavis and Butt-head Do America",
       "type": "movie",
-      "score": 0.729,
+      "score": 0.34,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 72.9,
         "shared_entities": [],
         "path_example": [
           [
@@ -267,9 +275,10 @@
       "item_id": 347,
       "label": "Lost World: Jurassic Park, The",
       "type": "movie",
-      "score": 0.738,
+      "score": 0.346,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 73.8,
         "shared_entities": [],
         "path_example": [
           [
@@ -299,9 +308,10 @@
       "item_id": 602,
       "label": "Rumble in the Bronx",
       "type": "movie",
-      "score": 0.741,
+      "score": 0.347,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 74.1,
         "shared_entities": [],
         "path_example": [
           [
@@ -331,9 +341,10 @@
       "item_id": 260,
       "label": "Tomorrow Never Dies",
       "type": "movie",
-      "score": 0.742,
+      "score": 0.348,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 74.2,
         "shared_entities": [],
         "path_example": [
           [
@@ -363,9 +374,10 @@
       "item_id": 714,
       "label": "Clerks",
       "type": "movie",
-      "score": 0.752,
+      "score": 0.354,
       "explanation": {
-        "brief": "Un classico di questo genere.",
+        "brief": "Genere affine ai tuoi interessi.",
+        "percent": 75.2,
         "shared_entities": [
           {
             "type": "genre",
@@ -400,9 +412,10 @@
       "item_id": 427,
       "label": "Mighty Aphrodite",
       "type": "movie",
-      "score": 0.771,
+      "score": 0.364,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 77.1,
         "shared_entities": [],
         "path_example": [
           [
@@ -432,9 +445,10 @@
       "item_id": 109,
       "label": "Annie Hall",
       "type": "movie",
-      "score": 0.771,
+      "score": 0.364,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 77.1,
         "shared_entities": [],
         "path_example": [
           [
@@ -464,9 +478,10 @@
       "item_id": 277,
       "label": "Eraser",
       "type": "movie",
-      "score": 0.771,
+      "score": 0.364,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 77.1,
         "shared_entities": [],
         "path_example": [
           [
@@ -496,9 +511,10 @@
       "item_id": 731,
       "label": "Boogie Nights",
       "type": "movie",
-      "score": 0.772,
+      "score": 0.365,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 77.2,
         "shared_entities": [],
         "path_example": [
           [
@@ -528,9 +544,10 @@
       "item_id": 274,
       "label": "Bridge on the River Kwai, The",
       "type": "movie",
-      "score": 0.772,
+      "score": 0.365,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 77.2,
         "shared_entities": [],
         "path_example": [
           [
@@ -560,9 +577,10 @@
       "item_id": 548,
       "label": "Sneakers",
       "type": "movie",
-      "score": 0.786,
+      "score": 0.373,
       "explanation": {
-        "brief": "Un classico di questo genere.",
+        "brief": "Genere affine ai tuoi interessi.",
+        "percent": 78.6,
         "shared_entities": [
           {
             "type": "genre",
@@ -597,9 +615,10 @@
       "item_id": 142,
       "label": "Heat",
       "type": "movie",
-      "score": 0.796,
+      "score": 0.379,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 79.6,
         "shared_entities": [],
         "path_example": [
           [
@@ -629,9 +648,10 @@
       "item_id": 126,
       "label": "Vertigo",
       "type": "movie",
-      "score": 0.798,
+      "score": 0.38,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 79.8,
         "shared_entities": [],
         "path_example": [
           [
@@ -661,9 +681,10 @@
       "item_id": 446,
       "label": "Long Kiss Goodnight, The",
       "type": "movie",
-      "score": 0.802,
+      "score": 0.382,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 80.2,
         "shared_entities": [],
         "path_example": [
           [
@@ -693,9 +714,10 @@
       "item_id": 678,
       "label": "Much Ado About Nothing",
       "type": "movie",
-      "score": 0.803,
+      "score": 0.383,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 80.3,
         "shared_entities": [],
         "path_example": [
           [
@@ -725,9 +747,10 @@
       "item_id": 239,
       "label": "One Flew Over the Cuckoo's Nest",
       "type": "movie",
-      "score": 0.809,
+      "score": 0.386,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 80.9,
         "shared_entities": [],
         "path_example": [
           [
@@ -757,9 +780,10 @@
       "item_id": 210,
       "label": "Cape Fear",
       "type": "movie",
-      "score": 0.824,
+      "score": 0.395,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 82.4,
         "shared_entities": [],
         "path_example": [
           [
@@ -789,9 +813,10 @@
       "item_id": 292,
       "label": "Ghost",
       "type": "movie",
-      "score": 0.834,
+      "score": 0.401,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 83.4,
         "shared_entities": [],
         "path_example": [
           [
@@ -821,9 +846,10 @@
       "item_id": 259,
       "label": "Citizen Kane",
       "type": "movie",
-      "score": 0.835,
+      "score": 0.401,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 83.5,
         "shared_entities": [],
         "path_example": [
           [
@@ -853,9 +879,10 @@
       "item_id": 7,
       "label": "Hunt for Red October, The",
       "type": "movie",
-      "score": 0.837,
+      "score": 0.402,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 83.7,
         "shared_entities": [],
         "path_example": [
           [
@@ -885,9 +912,10 @@
       "item_id": 272,
       "label": "Graduate, The",
       "type": "movie",
-      "score": 0.85,
+      "score": 0.41,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 85.0,
         "shared_entities": [],
         "path_example": [
           [
@@ -917,9 +945,10 @@
       "item_id": 243,
       "label": "Field of Dreams",
       "type": "movie",
-      "score": 0.865,
+      "score": 0.418,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 86.5,
         "shared_entities": [],
         "path_example": [
           [
@@ -949,9 +978,10 @@
       "item_id": 241,
       "label": "People vs. Larry Flynt, The",
       "type": "movie",
-      "score": 0.865,
+      "score": 0.419,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 86.5,
         "shared_entities": [],
         "path_example": [
           [
@@ -981,9 +1011,10 @@
       "item_id": 402,
       "label": "Tin Cup",
       "type": "movie",
-      "score": 0.868,
+      "score": 0.42,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 86.8,
         "shared_entities": [],
         "path_example": [
           [
@@ -1013,9 +1044,10 @@
       "item_id": 353,
       "label": "GoodFellas",
       "type": "movie",
-      "score": 0.874,
+      "score": 0.424,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 87.4,
         "shared_entities": [],
         "path_example": [
           [
@@ -1045,9 +1077,10 @@
       "item_id": 18,
       "label": "Sabrina",
       "type": "movie",
-      "score": 0.877,
+      "score": 0.425,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 87.7,
         "shared_entities": [],
         "path_example": [
           [
@@ -1077,9 +1110,10 @@
       "item_id": 114,
       "label": "Shining, The",
       "type": "movie",
-      "score": 0.888,
+      "score": 0.432,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 88.8,
         "shared_entities": [],
         "path_example": [
           [
@@ -1109,9 +1143,10 @@
       "item_id": 200,
       "label": "Schindler's List",
       "type": "movie",
-      "score": 0.893,
+      "score": 0.434,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 89.3,
         "shared_entities": [],
         "path_example": [
           [
@@ -1141,9 +1176,10 @@
       "item_id": 174,
       "label": "Casablanca",
       "type": "movie",
-      "score": 0.893,
+      "score": 0.435,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 89.3,
         "shared_entities": [],
         "path_example": [
           [
@@ -1173,9 +1209,10 @@
       "item_id": 400,
       "label": "In & Out",
       "type": "movie",
-      "score": 0.895,
+      "score": 0.436,
       "explanation": {
-        "brief": "Un classico di questo genere.",
+        "brief": "Genere affine ai tuoi interessi.",
+        "percent": 89.5,
         "shared_entities": [
           {
             "type": "genre",
@@ -1210,9 +1247,10 @@
       "item_id": 238,
       "label": "Shawshank Redemption, The",
       "type": "movie",
-      "score": 0.896,
+      "score": 0.436,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 89.6,
         "shared_entities": [],
         "path_example": [
           [
@@ -1242,9 +1280,10 @@
       "item_id": 220,
       "label": "Fish Called Wanda, A",
       "type": "movie",
-      "score": 0.9,
+      "score": 0.439,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 90.0,
         "shared_entities": [],
         "path_example": [
           [
@@ -1274,9 +1313,10 @@
       "item_id": 182,
       "label": "Star Trek: The Wrath of Khan",
       "type": "movie",
-      "score": 0.904,
+      "score": 0.441,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 90.4,
         "shared_entities": [],
         "path_example": [
           [
@@ -1306,9 +1346,10 @@
       "item_id": 403,
       "label": "Braveheart",
       "type": "movie",
-      "score": 0.909,
+      "score": 0.444,
       "explanation": {
         "brief": "Connessione tematica rilevata.",
+        "percent": 90.9,
         "shared_entities": [
           {
             "type": "entity",
@@ -1343,9 +1384,10 @@
       "item_id": 305,
       "label": "Blues Brothers, The",
       "type": "movie",
-      "score": 0.915,
+      "score": 0.447,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 91.5,
         "shared_entities": [],
         "path_example": [
           [
@@ -1375,9 +1417,10 @@
       "item_id": 191,
       "label": "Forrest Gump",
       "type": "movie",
-      "score": 0.932,
+      "score": 0.457,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 93.2,
         "shared_entities": [],
         "path_example": [
           [
@@ -1407,9 +1450,10 @@
       "item_id": 255,
       "label": "Alien",
       "type": "movie",
-      "score": 0.937,
+      "score": 0.46,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 93.7,
         "shared_entities": [],
         "path_example": [
           [
@@ -1439,9 +1483,10 @@
       "item_id": 137,
       "label": "Mission: Impossible",
       "type": "movie",
-      "score": 0.952,
+      "score": 0.469,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 95.2,
         "shared_entities": [],
         "path_example": [
           [
@@ -1471,9 +1516,10 @@
       "item_id": 700,
       "label": "Titanic",
       "type": "movie",
-      "score": 0.953,
+      "score": 0.469,
       "explanation": {
         "brief": "Connessione tematica rilevata.",
+        "percent": 95.3,
         "shared_entities": [
           {
             "type": "entity",
@@ -1508,9 +1554,10 @@
       "item_id": 361,
       "label": "Ransom",
       "type": "movie",
-      "score": 0.957,
+      "score": 0.472,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 95.7,
         "shared_entities": [],
         "path_example": [
           [
@@ -1540,9 +1587,10 @@
       "item_id": 640,
       "label": "Air Force One",
       "type": "movie",
-      "score": 0.972,
+      "score": 0.48,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 97.2,
         "shared_entities": [],
         "path_example": [
           [
@@ -1572,9 +1620,10 @@
       "item_id": 102,
       "label": "Raiders of the Lost Ark",
       "type": "movie",
-      "score": 0.975,
+      "score": 0.482,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 97.5,
         "shared_entities": [],
         "path_example": [
           [
@@ -1604,9 +1653,10 @@
       "item_id": 354,
       "label": "Star Wars",
       "type": "movie",
-      "score": 0.99,
+      "score": 0.49,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 99.0,
         "shared_entities": [],
         "path_example": [
           [

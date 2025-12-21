@@ -1,0 +1,336 @@
+{
+  "user_id": 1,
+  "generated_at": "2025-12-18T16:08:18.035406",
+  "recommendations": [
+    {
+      "item_id": 255,
+      "label": "Alien",
+      "type": "movie",
+      "score": 0.472,
+      "explanation": {
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 47.2,
+        "shared_entities": [],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            "User"
+          ],
+          [
+            "WATCHED/LIKED",
+            "movie",
+            "Item m.02rzn2b"
+          ],
+          [
+            "WATCHED/LIKED",
+            "user",
+            "User"
+          ],
+          [
+            "WATCHED/LIKED",
+            "movie",
+            "Item m.03nvnqk"
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 13,
+      "label": "Star Trek: First Contact",
+      "type": "movie",
+      "score": 0.473,
+      "explanation": {
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 47.3,
+        "shared_entities": [],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            "User"
+          ],
+          [
+            "WATCHED/LIKED",
+            "movie",
+            "Item m.0gmlf25"
+          ],
+          [
+            "WATCHED/LIKED",
+            "user",
+            "User"
+          ],
+          [
+            "WATCHED/LIKED",
+            "movie",
+            "Item m.047q4xt"
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 84,
+      "label": "Truth About Cats & Dogs, The",
+      "type": "movie",
+      "score": 0.478,
+      "explanation": {
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 47.8,
+        "shared_entities": [],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            "User"
+          ],
+          [
+            "WATCHED/LIKED",
+            "movie",
+            "Item m.014bjk"
+          ],
+          [
+            "WATCHED/LIKED",
+            "user",
+            "User"
+          ],
+          [
+            "WATCHED/LIKED",
+            "movie",
+            "Item m.07cw4"
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 216,
+      "label": "Blade Runner",
+      "type": "movie",
+      "score": 0.481,
+      "explanation": {
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 48.1,
+        "shared_entities": [],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            "User"
+          ],
+          [
+            "WATCHED/LIKED",
+            "movie",
+            "Item m.0kvc36"
+          ],
+          [
+            "WATCHED/LIKED",
+            "user",
+            "User"
+          ],
+          [
+            "WATCHED/LIKED",
+            "movie",
+            "Item m.063dp0"
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 361,
+      "label": "Ransom",
+      "type": "movie",
+      "score": 0.488,
+      "explanation": {
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 48.8,
+        "shared_entities": [],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            "User"
+          ],
+          [
+            "WATCHED/LIKED",
+            "movie",
+            "Item m.05l1ky"
+          ],
+          [
+            "WATCHED/LIKED",
+            "user",
+            "User"
+          ],
+          [
+            "WATCHED/LIKED",
+            "movie",
+            "Item m.09c7rx"
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 345,
+      "label": "Indiana Jones and the Last Crusade",
+      "type": "movie",
+      "score": 0.488,
+      "explanation": {
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 48.8,
+        "shared_entities": [],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            "User"
+          ],
+          [
+            "WATCHED/LIKED",
+            "movie",
+            "Item m.03681w"
+          ],
+          [
+            "WATCHED/LIKED",
+            "user",
+            "User"
+          ],
+          [
+            "WATCHED/LIKED",
+            "movie",
+            "Item m.04cr1c3"
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 253,
+      "label": "Amadeus",
+      "type": "movie",
+      "score": 0.492,
+      "explanation": {
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 49.2,
+        "shared_entities": [],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            "User"
+          ],
+          [
+            "WATCHED/LIKED",
+            "movie",
+            "Item m.0gmlf25"
+          ],
+          [
+            "WATCHED/LIKED",
+            "user",
+            "User"
+          ],
+          [
+            "WATCHED/LIKED",
+            "movie",
+            "Item m.08lr6s"
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 399,
+      "label": "Independence Day (ID4)",
+      "type": "movie",
+      "score": 0.504,
+      "explanation": {
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 50.4,
+        "shared_entities": [],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            "User"
+          ],
+          [
+            "WATCHED/LIKED",
+            "movie",
+            "Item m.02rzn2b"
+          ],
+          [
+            "WATCHED/LIKED",
+            "user",
+            "User"
+          ],
+          [
+            "WATCHED/LIKED",
+            "movie",
+            "Item m.0gkqtv"
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 354,
+      "label": "Star Wars",
+      "type": "movie",
+      "score": 0.504,
+      "explanation": {
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 50.4,
+        "shared_entities": [],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            "User"
+          ],
+          [
+            "WATCHED/LIKED",
+            "movie",
+            "Item m.03681w"
+          ],
+          [
+            "WATCHED/LIKED",
+            "user",
+            "User"
+          ],
+          [
+            "WATCHED/LIKED",
+            "movie",
+            "Item m.016fyc"
+          ]
+        ]
+      }
+    },
+    {
+      "item_id": 161,
+      "label": "Empire Strikes Back, The",
+      "type": "movie",
+      "score": 0.506,
+      "explanation": {
+        "brief": "Consigliato in base alla tua cronologia.",
+        "percent": 50.6,
+        "shared_entities": [],
+        "path_example": [
+          [
+            "self_loop",
+            "user",
+            "User"
+          ],
+          [
+            "WATCHED/LIKED",
+            "movie",
+            "Item m.04j0n62"
+          ],
+          [
+            "WATCHED/LIKED",
+            "user",
+            "User"
+          ],
+          [
+            "WATCHED/LIKED",
+            "movie",
+            "Item m.0ktdb"
+          ]
+        ]
+      }
+    }
+  ]
+}
