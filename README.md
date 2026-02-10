@@ -143,13 +143,13 @@ Di seguito è riportato l'albero completo delle directory con una descrizione de
     
 ### Guida ai Moduli
 
-Per facilitare la navigazione, ecco una spiegazione approfondita delle tre sezioni principali che compongono l'architettura del progetto:
+Per facilitare la navigazione, ecco una spiegazione delle tre sezioni principali che compongono l'architettura del progetto:
 
-#### 1. Modulo `engine/` (AI Backend)
+#### 1. Modulo `engine/` (Backend)
 È il nucleo computazionale del sistema, responsabile del caricamento del Knowledge Graph e dell'esecuzione degli algoritmi di raccomandazione.
 * **Core Script:** Il file `generate_configurable_recs.py` carica i pesi del modello dalla cartella `models/` e processa i dati grezzi presenti in `custom_data/`.
 * **Data Processing:** Utilizza file di embedding (`.entityemb`, `.useremb`) e strutture di grafo (`.kg`) per calcolare i percorsi di raccomandazione più rilevanti.
-* **Output:** Al termine dell'esecuzione, esporta i risultati in `public/data/mock_recs.json`, agendo come fornitore di dati per l'interfaccia web.
+* **Output:** Al termine dell'esecuzione, esporta i risultati in `public/data/recommendations.json`, agendo come fornitore di dati per l'interfaccia web.
 * **Nota:** I file pesanti (come i `.pth` e gli embedding in `custom_data/`) sono tipicamente esclusi dal versionamento tramite `.gitignore` e devono essere gestiti separatamente.
 
 #### 2. Modulo `public/` (Frontend)
