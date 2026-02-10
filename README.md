@@ -223,9 +223,11 @@ Il modello PGPR (Policy-Guided Path Reasoning) è un agente di Reinforcement Lea
 
 Questi file definiscono le connessioni fisiche tra le entità. Si trovano nella cartella `dataset/custom` e devono seguire il formato **RecBole**, i file nello specifico sono i seguenti:
 
-* **`custom_data.kg`**: Definisce la struttura del ambiente di cui volgiamo fornire le raccomandazioni, è una lista di triplette **testa->relazione->coda** (es. *Film -> Diretto da -> Regista*)
-* **`custom_data.inter`**: Contiene lo storico delle interazioni (User ID, Item ID, Rating/Click) ed è la base per calcolare le preferenze dell'utente, sono coppie **UserID <-> ItemID** con associato un rating 
-* **`custom_data.item`**: Serve a mappare gli ID interni di Hopwise con quelli delle entità del Knowldge Graph, si utilizza per associare un'etichetta leggibile (es. titolo del film) agli ID numerici delle raccomandazioni
+* **`custom_data.kg`**: Definisce la struttura del ambiente di cui volgiamo fornire le raccomandazioni, è una lista di triplette **testa->relazione->coda** (es. *Film -> Diretto da -> Regista*).
+* **`custom_data.inter`**: Contiene lo storico delle interazioni (User ID, Item ID, Rating/Click) ed è la base per calcolare le preferenze dell'utente, sono coppie **UserID <-> ItemID** con associato un rating.
+* **`custom_data.item`**: Serve a mappare gli ID interni di Hopwise con quelli delle entità del Knowldge Graph, si utilizza per associare un'etichetta leggibile (es. titolo del film) agli ID numerici delle raccomandazioni.
+* **`custom_data.link`**:File indispensabile se gli ID degli oggetti nel file interazioni (`item_id`) differiscono dagli ID nel Knowledge Graph (`entity_id`). Agisce come un dizionario per dire al modello che l'item X corrisponde al nodo Y nel grafo.
+* **`custom_data.user`**: Contiene le feature esplicite di ogni utente (età, sesso, ocupazione, etc.), questo file nel nostro modello è opzionale, è utile qualora si volessero definire regole basate sulla demografia.
 
 
 ###  7.2 Configurazione Semantica
