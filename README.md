@@ -110,36 +110,36 @@ L'organizzazione del codice è stata progettata seguendo il principio della **Se
 Di seguito è riportato l'albero completo delle directory con una descrizione dettagliata di ogni componente:
 
     YReccomend/
-    ├── 📂 engine/                   # [AI BACKEND] Logica di calcolo in Python
+    ├── 📂 engine/                   
     │   ├── 📂 config/
-    │   │   └── 📄 domain_config.json # Configurazione del dominio e parametri del grafo
-    │   ├── 📂 custom_data/          # Dataset atomici (interazioni, KG, embedding)
-    │   │   ├── 📄 custom_data.inter  # Storico interazioni User-Item
-    │   │   ├── 📄 custom_data.kg     # Knowledge Graph (Triple)
-    │   │   ├── 📄 *.entityemb        # Embedding delle entità
+    │   │   └── 📄 domain_config.json 
+    │   ├── 📂 custom_data/          
+    │   │   ├── 📄 custom_data.inter  
+    │   │   ├── 📄 custom_data.kg     
+    │   │   ├── 📄 *.entityemb        
     │   │   └── 📄 ... (altri file di dati)
-    │   ├── 📂 models/               # Checkpoint del modello addestrato
-    │   │   └── 📦 PGPR-Dec...pth     # Pesi PyTorch del modello PGPR
-    │   └── 🐍 generate_configurable_recs.py # SCRIPT CORE: Genera le raccomandazioni
+    │   └── 🐍 generate_configurable_recs.py
     │
-    ├── 📂 public/                   # [FRONTEND] Risorse statiche per il browser
-    │   ├── 📂 assets/               # Icone e risorse grafiche
+    ├── 📂 log/PGPR               
+    │       └── 📄 PGPR-custom_data...     
+    │
+    ├── 📂 public/                   
     │   ├── 📂 css/
-    │   │   └── 🎨 style.css         # Styling, Dark Mode e layout
-    │   ├── 📂 data/                 # Punto di scambio dati tra Python e Web
-    │   │   └── 📄 mock_recs.json    # Output dell'engine letto dall'interfaccia
+    │   │   └── 📄 style.css         
+    │   ├── 📂 data/  
+    │   │   ├── 📄 theme.json
+    │   │   └── 📄 mock_recs.json    
     │   ├── 📂 js/
-    │   │   └── 📜 app.js            # Logica UI: Rendering D3.js e interazioni
-    │   └── 📄 index.html            # Entry point dell'applicazione
+    │   │   └── 📄 app.js            
+    │   └── 📄 index.html            
     │
-    ├── 📂 server/                   # [WEB SERVER] Ambiente Node.js
-    │   └── 📜 server.js             # Server Express: Gestisce il routing e serve i file
-    │
-    ├── 📂 node_modules/             # Dipendenze Node.js (generate da npm install)
-    ├── 📄 .gitignore                # File esclusi dal versionamento (es. modelli pesanti)
-    ├── 📄 package.json              # Configurazione del progetto e script npm
-    ├── 📄 package-lock.json         # Lockfile per la stabilità delle versioni
-    └── 📝 README.md                 # Documentazione tecnica
+    ├── 📂 server/                   
+    │   └── 📄 server.js             
+    ├── 📄 .gitignore                
+    ├── 📄 package.json              
+    ├── 📄 package-lock.json     
+    ├── 📄 requirements.txt
+    └── 📝 README.md                 
     
 ### Guida ai Moduli
 
