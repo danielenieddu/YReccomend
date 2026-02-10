@@ -226,16 +226,16 @@ Questi file definiscono le connessioni fisiche tra le entità. Si trovano nella 
 * **`custom_data.kg`**: Definisce la struttura del ambiente di cui volgiamo fornire le raccomandazioni, è una lista di triplette **testa->relazione->coda** (es. *Film -> Diretto da -> Regista*)
 * **`custom_data.inter`**: Contiene lo storico delle interazioni (User ID, Item ID, Rating/Click) ed è la base per calcolare le preferenze dell'utente, sono coppie **UserID <-> ItemID** con associato un rating 
 * **`custom_data.item`**: Serve a mappare gli ID interni di Hopwise con quelli delle entità del Knowldge Graph, si utilizza per associare un'etichetta leggibile (es. titolo del film) agli ID numerici delle raccomandazioni
-* **File `.emb`**: Vettori latenti pre-calcolati (User, Entity, Relation). Poiché PGPR è un modello di *Path Reasoning*, necessita di uno stato iniziale vettoriale (generato da modelli come TransE) per navigare efficacemente lo spazio semantico.
+
 
 ###  7.2 Configurazione Semantica
 **PGPR** non apprende le rappresentazioni delle entità da zero; richiede uno "stato iniziale" pre-addestrato per orientarsi nel grafo. Questi vettori devono essere generati preventivamente (nel nostro caso tramite **TransE**) ed esportati.
 
 I tre file di embeddings generati sono qui riportati:
 
-1.  **custom_data.useremb:** Contiene gli embedding degli utenti, dove questi sono rappresentati come punto nello spazio multi-vettoriale, in questo modo utenti vicini nello spazio hanno gusti simili.
-2.  **custom_data.entityemb:** Contiene gli embedding di tutto ciò che non è utente, sempre rappresentati come punti nello spazio multi-vettoriale.
-3.  **custom_data.relationemb:** Le relazioni sono rappresentate come **Vettore di Traslazione**, da qui appunto TransE, il contentuto di questo file rappresenta le "indicazioni" per raggiungere un entità partendo da un'altra, attraverso una somma vettoriale (Big Lebowski + directed_by = Coen.bros)
+1.  **`custom_data.useremb`:** Contiene gli embedding degli utenti, dove questi sono rappresentati come punto nello spazio multi-vettoriale, in questo modo utenti vicini nello spazio hanno gusti simili.
+2.  **`custom_data.entityemb`:** Contiene gli embedding di tutto ciò che non è utente, sempre rappresentati come punti nello spazio multi-vettoriale.
+3.  **`custom_data.relationemb`:** Le relazioni sono rappresentate come **Vettore di Traslazione**, da qui appunto TransE, il contentuto di questo file rappresenta le "indicazioni" per raggiungere un entità partendo da un'altra, attraverso una somma vettoriale (Big Lebowski + directed_by = Coen.bros)
 
 ### Utilizzo di altri dataset
 Il motore di ragionamento "non sa" di lavorare con film o prodotti, naviga semplicemente un grafo astratto definito dai file su cui lavora,per utilizzare un altro dataset è sufficiente rispettare la topologia dei file descritta sopra e mantenere invariata la logica di connessioene.
