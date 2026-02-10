@@ -1,0 +1,12 @@
+{
+  "defaults": { "color": "#000000" },
+  "types": {
+    "movie": { "color": "#0070c0" },
+    "actor": { "color": "#f59e0b" },
+    "director": { "color": "#10b981"},
+    "genre": { "color": "#ef4444"},
+    "entity": { "color": "#8b5cf6"},
+    "recipe": { "color": "#eab308"},
+    "book": { "color": "#d946ef" }
+  }
+}

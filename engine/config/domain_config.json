@@ -1,0 +1,34 @@
+{
+  "item_type_label": "movie",
+  "mappings": {
+    "film.film.actor": {
+      "type": "actor",
+      "brief_template": "Con un attore presente nei tuoi preferiti ({val})"
+    },
+    "film.actor.film": {
+      "type": "actor",
+      "brief_template": "Con un attore presente nei tuoi preferiti ({val})"
+    },
+    "film.film.directed_by": {
+      "type": "director",
+      "brief_template": "Dallo stesso regista ({val})"
+    },
+    "film.director.film": {
+      "type": "director",
+      "brief_template": "Dallo stesso regista ({val})"
+    },
+    "film.film.genre": {
+      "type": "genre",
+      "brief_template": "Per gli amanti del genere ({val})"
+    },
+    "film.film_genre.films_in_this_genre": {
+      "type": "genre",
+      "brief_template": "Per gli amanti del genere ({val})"
+    }
+    
+  },
+  "default_mapping": {
+    "type": "entity",
+    "brief_template": "Correlato tematicamente ({val})"
+  }
+}

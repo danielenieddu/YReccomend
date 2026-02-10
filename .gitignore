@@ -1,0 +1,13 @@
+# Node
+node_modules/
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+
+# Modelli pesanti e Dati (Opzionale: rimuovi se vuoi versionarli e sono <100MB)
+*.pth
+*.rar
+engine/data/

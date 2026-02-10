@@ -1,36 +1,42 @@
 {
   "user_id": 2,
-  "generated_at": "2025-12-18T17:17:02.643913",
+  "domain": "movie",
   "recommendations": [
     {
       "item_id": 607,
       "label": "Magnificent Seven, The",
       "type": "movie",
+      "role": "target_item",
       "score": 0.6,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.02_lmb"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.06974q"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.02_lmb",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.06974q",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -38,31 +44,37 @@
       "item_id": 490,
       "label": "Lost Highway",
       "type": "movie",
+      "role": "target_item",
       "score": 0.621,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.0dp7wt"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.06zt03h"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.0dp7wt",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.06zt03h",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -70,31 +82,37 @@
       "item_id": 184,
       "label": "Wag the Dog",
       "type": "movie",
+      "role": "target_item",
       "score": 0.655,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.03bxw5"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.03glth"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.03bxw5",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.03glth",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -102,31 +120,37 @@
       "item_id": 138,
       "label": "Bonnie and Clyde",
       "type": "movie",
+      "role": "target_item",
       "score": 0.665,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.06597h"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.07cj2v"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.06597h",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.07cj2v",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -134,31 +158,37 @@
       "item_id": 558,
       "label": "Room with a View, A",
       "type": "movie",
+      "role": "target_item",
       "score": 0.712,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.04y0t6"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.08tk2f"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.04y0t6",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.08tk2f",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -166,31 +196,37 @@
       "item_id": 237,
       "label": "Singin' in the Rain",
       "type": "movie",
+      "role": "target_item",
       "score": 0.724,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.0gks1vb"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.04j2ncz"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.0gks1vb",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.04j2ncz",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -198,36 +234,43 @@
       "item_id": 505,
       "label": "Secrets & Lies",
       "type": "movie",
+      "role": "target_item",
       "score": 0.726,
       "explanation": {
-        "brief": "Connessione tematica rilevata.",
+        "brief": "Correlato tematicamente (m.0kprd8)",
+        "strategy_label": "Basato su Entity",
         "shared_entities": [
           {
             "type": "entity",
-            "label": "m.0kprd8"
+            "label": "m.0kprd8",
+            "role": "context_entity"
           }
         ],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.0fk60h"
-          ],
-          [
-            "film.content_rating.film",
-            "entity",
-            "m.0kprd8"
-          ],
-          [
-            "film.content_rating.film",
-            "movie",
-            "Item m.0gkrtx9"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.0fk60h",
+            "role": "history_item"
+          },
+          {
+            "relation": "film.content_rating.film",
+            "type": "entity",
+            "label": "m.0kprd8",
+            "role": "context_entity"
+          },
+          {
+            "relation": "film.content_rating.film",
+            "type": "movie",
+            "label": "Item m.0gkrtx9",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -235,31 +278,37 @@
       "item_id": 408,
       "label": "Beavis and Butt-head Do America",
       "type": "movie",
+      "role": "target_item",
       "score": 0.729,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.07l5v6"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.02q4sd5"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.07l5v6",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.02q4sd5",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -267,31 +316,37 @@
       "item_id": 347,
       "label": "Lost World: Jurassic Park, The",
       "type": "movie",
+      "role": "target_item",
       "score": 0.738,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.0797d9"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.074fx1"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.0797d9",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.074fx1",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -299,31 +354,37 @@
       "item_id": 602,
       "label": "Rumble in the Bronx",
       "type": "movie",
+      "role": "target_item",
       "score": 0.741,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.02_lmb"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.07_l0f"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.02_lmb",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.07_l0f",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -331,31 +392,37 @@
       "item_id": 260,
       "label": "Tomorrow Never Dies",
       "type": "movie",
+      "role": "target_item",
       "score": 0.742,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.01j3gd"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.026sy10"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.01j3gd",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.026sy10",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -363,36 +430,43 @@
       "item_id": 714,
       "label": "Clerks",
       "type": "movie",
+      "role": "target_item",
       "score": 0.752,
       "explanation": {
-        "brief": "Un classico di questo genere.",
+        "brief": "Un classico del genere m.02kdv5l",
+        "strategy_label": "Basato su Genre",
         "shared_entities": [
           {
             "type": "genre",
-            "label": "m.02kdv5l"
+            "label": "m.02kdv5l",
+            "role": "context_entity"
           }
         ],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.01nc_h"
-          ],
-          [
-            "film.film.genre",
-            "genre",
-            "m.02kdv5l"
-          ],
-          [
-            "film.film.genre",
-            "movie",
-            "Item m.0337y9"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.01nc_h",
+            "role": "history_item"
+          },
+          {
+            "relation": "film.film.genre",
+            "type": "genre",
+            "label": "m.02kdv5l",
+            "role": "context_entity"
+          },
+          {
+            "relation": "film.film.genre",
+            "type": "movie",
+            "label": "Item m.0337y9",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -400,31 +474,37 @@
       "item_id": 427,
       "label": "Mighty Aphrodite",
       "type": "movie",
+      "role": "target_item",
       "score": 0.771,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.07tdzq"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.0559wc"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.07tdzq",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.0559wc",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -432,31 +512,37 @@
       "item_id": 109,
       "label": "Annie Hall",
       "type": "movie",
+      "role": "target_item",
       "score": 0.771,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.0kvbdg"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.04n04q"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.0kvbdg",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.04n04q",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -464,31 +550,37 @@
       "item_id": 277,
       "label": "Eraser",
       "type": "movie",
+      "role": "target_item",
       "score": 0.771,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.05y0cr"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.014l6_"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.05y0cr",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.014l6_",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -496,31 +588,37 @@
       "item_id": 731,
       "label": "Boogie Nights",
       "type": "movie",
+      "role": "target_item",
       "score": 0.772,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.03bxnf"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.060_dp"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.03bxnf",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.060_dp",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -528,31 +626,37 @@
       "item_id": 274,
       "label": "Bridge on the River Kwai, The",
       "type": "movie",
+      "role": "target_item",
       "score": 0.772,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.05xss5"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.012h32"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.05xss5",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.012h32",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -560,36 +664,43 @@
       "item_id": 548,
       "label": "Sneakers",
       "type": "movie",
+      "role": "target_item",
       "score": 0.786,
       "explanation": {
-        "brief": "Un classico di questo genere.",
+        "brief": "Un classico del genere m.04t36",
+        "strategy_label": "Basato su Genre",
         "shared_entities": [
           {
             "type": "genre",
-            "label": "m.04t36"
+            "label": "m.04t36",
+            "role": "context_entity"
           }
         ],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.01nc_h"
-          ],
-          [
-            "film.film.genre",
-            "genre",
-            "m.04t36"
-          ],
-          [
-            "film.film.genre",
-            "movie",
-            "Item m.014d_k"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.01nc_h",
+            "role": "history_item"
+          },
+          {
+            "relation": "film.film.genre",
+            "type": "genre",
+            "label": "m.04t36",
+            "role": "context_entity"
+          },
+          {
+            "relation": "film.film.genre",
+            "type": "movie",
+            "label": "Item m.014d_k",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -597,31 +708,37 @@
       "item_id": 142,
       "label": "Heat",
       "type": "movie",
+      "role": "target_item",
       "score": 0.796,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.02_lmb"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.04ltlj"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.02_lmb",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.04ltlj",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -629,31 +746,37 @@
       "item_id": 126,
       "label": "Vertigo",
       "type": "movie",
+      "role": "target_item",
       "score": 0.798,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.05xss5"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.03dymt"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.05xss5",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.03dymt",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -661,31 +784,37 @@
       "item_id": 446,
       "label": "Long Kiss Goodnight, The",
       "type": "movie",
+      "role": "target_item",
       "score": 0.802,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.05y0cr"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.08xnxg"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.05y0cr",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.08xnxg",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -693,31 +822,37 @@
       "item_id": 678,
       "label": "Much Ado About Nothing",
       "type": "movie",
+      "role": "target_item",
       "score": 0.803,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.0jnwx"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.04j0357"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.0jnwx",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.04j0357",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -725,31 +860,37 @@
       "item_id": 239,
       "label": "One Flew Over the Cuckoo's Nest",
       "type": "movie",
+      "role": "target_item",
       "score": 0.809,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.0jnwx"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.02_kd"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.0jnwx",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.02_kd",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -757,31 +898,37 @@
       "item_id": 210,
       "label": "Cape Fear",
       "type": "movie",
+      "role": "target_item",
       "score": 0.824,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.0gkqtv"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.03ddd5"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.0gkqtv",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.03ddd5",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -789,31 +936,37 @@
       "item_id": 292,
       "label": "Ghost",
       "type": "movie",
+      "role": "target_item",
       "score": 0.834,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.06597h"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.09z3z0x"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.06597h",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.09z3z0x",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -821,31 +974,37 @@
       "item_id": 259,
       "label": "Citizen Kane",
       "type": "movie",
+      "role": "target_item",
       "score": 0.835,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.0hqqs"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.0bnthvd"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.0hqqs",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.0bnthvd",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -853,31 +1012,37 @@
       "item_id": 7,
       "label": "Hunt for Red October, The",
       "type": "movie",
+      "role": "target_item",
       "score": 0.837,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.01dybc"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.03hjw08"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.01dybc",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.03hjw08",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -885,31 +1050,37 @@
       "item_id": 272,
       "label": "Graduate, The",
       "type": "movie",
+      "role": "target_item",
       "score": 0.85,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.0gkr0pf"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.02qmjbc"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.0gkr0pf",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.02qmjbc",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -917,31 +1088,37 @@
       "item_id": 243,
       "label": "Field of Dreams",
       "type": "movie",
+      "role": "target_item",
       "score": 0.865,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.0kvbdg"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.03dbg_"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.0kvbdg",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.03dbg_",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -949,31 +1126,37 @@
       "item_id": 241,
       "label": "People vs. Larry Flynt, The",
       "type": "movie",
+      "role": "target_item",
       "score": 0.865,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.05xss5"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.02d413"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.05xss5",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.02d413",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -981,31 +1164,37 @@
       "item_id": 402,
       "label": "Tin Cup",
       "type": "movie",
+      "role": "target_item",
       "score": 0.868,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.02_lmb"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.04j295l"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.02_lmb",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.04j295l",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -1013,31 +1202,37 @@
       "item_id": 353,
       "label": "GoodFellas",
       "type": "movie",
+      "role": "target_item",
       "score": 0.874,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.0gkr0pf"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.03nr5vw"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.0gkr0pf",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.03nr5vw",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -1045,31 +1240,37 @@
       "item_id": 18,
       "label": "Sabrina",
       "type": "movie",
+      "role": "target_item",
       "score": 0.877,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.08x_q4"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.09zxs9"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.08x_q4",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.09zxs9",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -1077,31 +1278,37 @@
       "item_id": 114,
       "label": "Shining, The",
       "type": "movie",
+      "role": "target_item",
       "score": 0.888,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.0797d9"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.06_wvvd"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.0797d9",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.06_wvvd",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -1109,31 +1316,37 @@
       "item_id": 200,
       "label": "Schindler's List",
       "type": "movie",
+      "role": "target_item",
       "score": 0.893,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.07tdzq"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.07jnt"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.07tdzq",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.07jnt",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -1141,31 +1354,37 @@
       "item_id": 174,
       "label": "Casablanca",
       "type": "movie",
+      "role": "target_item",
       "score": 0.893,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.016z7f"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.04c4fd"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.016z7f",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.04c4fd",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -1173,36 +1392,43 @@
       "item_id": 400,
       "label": "In & Out",
       "type": "movie",
+      "role": "target_item",
       "score": 0.895,
       "explanation": {
-        "brief": "Un classico di questo genere.",
+        "brief": "Un classico del genere m.02l7c8",
+        "strategy_label": "Basato su Genre",
         "shared_entities": [
           {
             "type": "genre",
-            "label": "m.02l7c8"
+            "label": "m.02l7c8",
+            "role": "context_entity"
           }
         ],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.01nc_h"
-          ],
-          [
-            "film.film_genre.films_in_this_genre",
-            "genre",
-            "m.02l7c8"
-          ],
-          [
-            "film.film_genre.films_in_this_genre",
-            "movie",
-            "Item m.027xtwf"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.01nc_h",
+            "role": "history_item"
+          },
+          {
+            "relation": "film.film_genre.films_in_this_genre",
+            "type": "genre",
+            "label": "m.02l7c8",
+            "role": "context_entity"
+          },
+          {
+            "relation": "film.film_genre.films_in_this_genre",
+            "type": "movie",
+            "label": "Item m.027xtwf",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -1210,31 +1436,37 @@
       "item_id": 238,
       "label": "Shawshank Redemption, The",
       "type": "movie",
+      "role": "target_item",
       "score": 0.896,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.0gkqtv"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.03h193t"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.0gkqtv",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.03h193t",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -1242,31 +1474,37 @@
       "item_id": 220,
       "label": "Fish Called Wanda, A",
       "type": "movie",
+      "role": "target_item",
       "score": 0.9,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.0gkqtv"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.01hr1"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.0gkqtv",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.01hr1",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -1274,31 +1512,37 @@
       "item_id": 182,
       "label": "Star Trek: The Wrath of Khan",
       "type": "movie",
+      "role": "target_item",
       "score": 0.904,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.01dybc"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.0b6j4zh"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.01dybc",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.0b6j4zh",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -1306,36 +1550,43 @@
       "item_id": 403,
       "label": "Braveheart",
       "type": "movie",
+      "role": "target_item",
       "score": 0.909,
       "explanation": {
-        "brief": "Connessione tematica rilevata.",
+        "brief": "Correlato tematicamente (m.0kprd8)",
+        "strategy_label": "Basato su Entity",
         "shared_entities": [
           {
             "type": "entity",
-            "label": "m.0kprd8"
+            "label": "m.0kprd8",
+            "role": "context_entity"
           }
         ],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.0hqqs"
-          ],
-          [
-            "film.film.rating",
-            "entity",
-            "m.0kprd8"
-          ],
-          [
-            "film.content_rating.film",
-            "movie",
-            "Item m.08vz4p"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.0hqqs",
+            "role": "history_item"
+          },
+          {
+            "relation": "film.film.rating",
+            "type": "entity",
+            "label": "m.0kprd8",
+            "role": "context_entity"
+          },
+          {
+            "relation": "film.content_rating.film",
+            "type": "movie",
+            "label": "Item m.08vz4p",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -1343,31 +1594,37 @@
       "item_id": 305,
       "label": "Blues Brothers, The",
       "type": "movie",
+      "role": "target_item",
       "score": 0.915,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.07l5v6"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.033t6r"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.07l5v6",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.033t6r",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -1375,31 +1632,37 @@
       "item_id": 191,
       "label": "Forrest Gump",
       "type": "movie",
+      "role": "target_item",
       "score": 0.932,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.05xss5"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.016rw2"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.05xss5",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.016rw2",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -1407,31 +1670,37 @@
       "item_id": 255,
       "label": "Alien",
       "type": "movie",
+      "role": "target_item",
       "score": 0.937,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.0gks1vb"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.03nvnqk"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.0gks1vb",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.03nvnqk",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -1439,31 +1708,37 @@
       "item_id": 137,
       "label": "Mission: Impossible",
       "type": "movie",
+      "role": "target_item",
       "score": 0.952,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.07zjqm"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.0c2jk9"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.07zjqm",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.0c2jk9",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -1471,36 +1746,43 @@
       "item_id": 700,
       "label": "Titanic",
       "type": "movie",
+      "role": "target_item",
       "score": 0.953,
       "explanation": {
-        "brief": "Connessione tematica rilevata.",
+        "brief": "Correlato tematicamente (m.0bxg3)",
+        "strategy_label": "Basato su Entity",
         "shared_entities": [
           {
             "type": "entity",
-            "label": "m.0bxg3"
+            "label": "m.0bxg3",
+            "role": "context_entity"
           }
         ],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.0jnwx"
-          ],
-          [
-            "film.film.subjects",
-            "entity",
-            "m.0bxg3"
-          ],
-          [
-            "film.film.genre",
-            "movie",
-            "Item m.0b8l01"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.0jnwx",
+            "role": "history_item"
+          },
+          {
+            "relation": "film.film.subjects",
+            "type": "entity",
+            "label": "m.0bxg3",
+            "role": "context_entity"
+          },
+          {
+            "relation": "film.film.genre",
+            "type": "movie",
+            "label": "Item m.0b8l01",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -1508,31 +1790,37 @@
       "item_id": 361,
       "label": "Ransom",
       "type": "movie",
+      "role": "target_item",
       "score": 0.957,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.01j3gd"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.09c7rx"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.01j3gd",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.09c7rx",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -1540,31 +1828,37 @@
       "item_id": 640,
       "label": "Air Force One",
       "type": "movie",
+      "role": "target_item",
       "score": 0.972,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.06597h"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.011ycb"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.06597h",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.011ycb",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -1572,31 +1866,37 @@
       "item_id": 102,
       "label": "Raiders of the Lost Ark",
       "type": "movie",
+      "role": "target_item",
       "score": 0.975,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.03bxnf"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.071fr7"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.03bxnf",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.071fr7",
+            "role": "target_item"
+          }
         ]
       }
     },
@@ -1604,31 +1904,37 @@
       "item_id": 354,
       "label": "Star Wars",
       "type": "movie",
+      "role": "target_item",
       "score": 0.99,
       "explanation": {
-        "brief": "Consigliato in base alle tue interazioni.",
+        "brief": "Consigliato per te",
+        "strategy_label": "Utenti Simili",
         "shared_entities": [],
         "path_example": [
-          [
-            "self_loop",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.01dybc"
-          ],
-          [
-            "WATCHED/LIKED",
-            "user",
-            "User"
-          ],
-          [
-            "WATCHED/LIKED",
-            "movie",
-            "Item m.016fyc"
-          ]
+          {
+            "relation": "self_loop",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.01dybc",
+            "role": "history_item"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "user",
+            "label": "User",
+            "role": "source_entity"
+          },
+          {
+            "relation": "INTERACTION",
+            "type": "movie",
+            "label": "Item m.016fyc",
+            "role": "target_item"
+          }
         ]
       }
     }
