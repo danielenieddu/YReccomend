@@ -118,10 +118,12 @@ Di seguito è riportato l'albero completo delle directory con una descrizione de
     │   │   ├── 📄 custom_data.kg     
     │   │   ├── 📄 *.entityemb        
     │   │   └── 📄 ... (altri file di dati)
+    │   ├── 📂 models/
+    │   │   └── 📄 PGPR-Dec-...pth
     │   └── 🐍 generate_configurable_recs.py
     │
     ├── 📂 log/PGPR               
-    │       └── 📄 PGPR-custom_data...     
+    │       └── 📄 PGPR-custom_data....log    
     │
     ├── 📂 public/                   
     │   ├── 📂 css/
