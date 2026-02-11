@@ -184,8 +184,7 @@ for idx, row in top_recs.iterrows():
     }
     final_json["recommendations"].append(rec_obj)
 
-with open("recommendations.json", "w") as f:
+with open(OUTPUT_PATH, "w") as f:
     json.dump(final_json, f, indent=2)
 
-print("\nJSON Generato. Esempio struttura path:")
-print(json.dumps(final_json['recommendations'][0]['explanation'], indent=2))
+print("\nJSON Generato")
