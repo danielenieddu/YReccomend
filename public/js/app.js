@@ -256,12 +256,12 @@ function buildGraphPanel() {
   panel.style.backdropFilter = 'blur(16px)';        
   panel.style.webkitBackdropFilter = 'blur(16px)';
   panel.style.border = '1px solid rgba(255, 255, 255, 0.1)';
-  panel.style.borderRadius = '16px';                 
+  panel.style.borderRadius = '16px';                  
   panel.style.boxShadow = '0 10px 30px rgba(0,0,0,0.5)'; 
-  panel.style.padding = '20px';                      
+  panel.style.padding = '20px';                       
   panel.style.color = '#f1f5f9';
   panel.style.fontFamily = '"Inter", system-ui, sans-serif';
-  panel.style.display = 'flex';    
+  panel.style.display = 'flex';     
   panel.style.flexDirection = 'column';
   panel.style.zIndex = '900'; 
   panel.style.transition = 'all 0.4s cubic-bezier(0.16, 1, 0.3, 1)'; 
@@ -357,7 +357,7 @@ function buildGraphPanel() {
 
 function resetPanelDimensions(panel) {
   panel.style.position = 'absolute';
-  panel.style.top = '80px'; 
+  panel.style.top = '120px'; 
   panel.style.right = '20px';
   panel.style.left = 'auto'; 
   panel.style.bottom = 'auto';
@@ -614,7 +614,7 @@ function buildFiltersPanel(nodesAll, colorFor) {
   panel.id = 'filtersPanel';
   panel.style.position = 'absolute';
   panel.style.left = '20px';
-  panel.style.top = '80px';
+  panel.style.top = '120px';
   panel.style.zIndex = '10';
   applyPanelStyle(panel); 
   document.body.appendChild(panel);
@@ -1167,11 +1167,10 @@ function styleInfoCard() {
         card.style.right = '20px';
         card.style.left = 'auto';
         
-        card.style.top = '50%'; 
+        card.style.top = 'auto'; 
+        card.style.bottom = '30px'; 
         card.style.height = 'auto'; 
-        card.style.bottom = 'auto'; 
-        
-        card.style.maxHeight = '50%'; 
+        card.style.maxHeight = '45%'; 
         
         card.style.width = '320px';
         card.style.transform = 'none'; 
