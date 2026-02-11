@@ -50,8 +50,8 @@ Il livello di presentazione è responsabile della visualizzazione del **Knowledg
 
 * **Tecnologia:** HTML5, CSS3, Vanilla JavaScript con **D3.js**.
 * **Funzioni Chiave:**
-    * **Visualizzazione Grafica:**Dispone i nodi come degli item nello spazio in modo organico, minimizzando le sovrapposizioni.
-    * **Interattività:** Gestisce eventi complessi come Zoom, Riorganizzazione, Selezione e Hover dei nodi per un' esperienza più personalizzabile.
+    * **Visualizzazione Grafica**:Dispone i nodi come degli item nello spazio in modo organico, minimizzando le sovrapposizioni.
+    * **Interattività**: Gestisce eventi complessi come Zoom, Riorganizzazione, Selezione e Hover dei nodi per un' esperienza più personalizzabile.
     * **Filtraggio Dinamico:** Permette di nascondere o mostrare intere categorie di nodi (es. Attori, Registi) senza ricaricare la pagina.
 
 
@@ -59,20 +59,20 @@ Il livello di presentazione è responsabile della visualizzazione del **Knowledg
 Il cuore computazionale del sistema, dove risiede la logica di raccomandazione profonda.
 
 * **Tecnologia:** **Python 3**, **PyTorch**, **NumPy**, **Pandas**.
-* **Modello:** PGPR
-* **Funzioni Chiave:**
-    * **Data Loading:** Analizza e carica in memoria i file atomici del formato RecBole (`.inter`, `.kg`, `.item`) ricostruendo la topologia del grafo.
-    * **Model Loading:** Inizializza la rete neurale caricando i tensori dei pesi pre-addestrati dal file `.pth`.
-    * **Path Reasoning:** Esegue l'algoritmo di ricerca su grafo per identificare i percorsi che collegano l'utente agli item target (es. *Utente -> ha visto Film A -> diretto da Regista X -> che ha diretto Film B*).
-    * **JSON Export:** Serializza l'output in un formato JSON ottimizzato per il web, includendo metadati, score normalizzati e la struttura gerarchica della spiegazione.
+* **Modello**: PGPR
+* **Funzioni Chiave**:
+    * **Data Loading**: Analizza e carica in memoria i file atomici del formato RecBole (`.inter`, `.kg`, `.item`) ricostruendo la topologia del grafo.
+    * **Model Loading**: Inizializza la rete neurale caricando i tensori dei pesi pre-addestrati dal file `.pth`.
+    * **Path Reasoning**: Esegue l'algoritmo di ricerca su grafo per identificare i percorsi che collegano l'utente agli item target (es. *Utente -> ha visto Film A -> diretto da Regista X -> che ha diretto Film B*).
+    * **JSON Export**: Serializza l'output in un formato JSON ottimizzato per il web, includendo metadati, score normalizzati e la struttura gerarchica della spiegazione.
 
 ### Ciclo di Vita di una Raccomandazione
 
-1.  **Avvio:** Lo script di inferenza `inference.py` viene eseguito (manualmente o automaticamente).
-2.  **Elaborazione:** Il modello esplora il Knowledge Graph per un determinato `User_ID` target, selezionando i `Top_K` item con il punteggio di compatibilità più alto.
-3.  **Costruzione Spiegazione:** Per ogni raccomandazione identificata, il sistema estrae il percorso semantico più forte che giustifica la scelta.
-4.  **Pubblicazione:** I dati elaborati vengono scritti su disco nel percorso `public/data/recommendations.json`.
-5.  **Fruizione:** L'utente apre l'interfaccia web; il browser scarica il nuovo JSON e l'interfaccia "disegna" la storia dietro ogni raccomandazione in tempo reale.
+1.  **Avvio**: Lo script di inferenza `inference.py` viene eseguito (manualmente o automaticamente).
+2.  **Elaborazione**: Il modello esplora il Knowledge Graph per un determinato `User_ID` target, selezionando i `Top_K` item con il punteggio di compatibilità più alto.
+3.  **Costruzione Spiegazione**: Per ogni raccomandazione identificata, il sistema estrae il percorso semantico più forte che giustifica la scelta.
+4.  **Pubblicazione**: I dati elaborati vengono scritti su disco nel percorso `public/data/recommendations.json`.
+5.  **Fruizione**: L'utente apre l'interfaccia web; il browser scarica il nuovo JSON e l'interfaccia "disegna" la storia dietro ogni raccomandazione in tempo reale.
 
 ## 4. ✨ Funzionalità Principali <a name="4-funzionalità-principali"></a>
 
@@ -80,18 +80,18 @@ YReccomend non è una semplice lista di film suggeriti, ma uno strumento di espl
 
 ### Explanation & Storytelling
 * **Visualizzazione dei Percorsi:** Ogni raccomandazione mostra visivamente il "percorso di ragionamento" del modello (es. *Utente* $\to$ *Interagito con Film A* $\to$ *Diretto da Regista X* $\to$ *Ha diretto Film Raccomandato*).
-* **Story Mode:** Una modalità narrativa passo-passo che guida l'utente nella comprensione del suggerimento, scomponendo la logica in tre fasi: *La Raccomandazione*, *La Strategia*, e *Le Connessioni*.
-* **Knowledge Graph Isolato:** Quando si seleziona un nodo, il sistema genera un mini-grafo dedicato che mostra esclusivamente le entità coinvolte nella spiegazione, rimuovendo il rumore di fondo.
+* **Story Mode**: Una modalità narrativa passo-passo che guida l'utente nella comprensione del suggerimento, scomponendo la logica in tre fasi: *La Raccomandazione*, *La Strategia*, e *Le Connessioni*.
+* **Knowledge Graph Isolato**: Quando si seleziona un nodo, il sistema genera un mini-grafo dedicato che mostra esclusivamente le entità coinvolte nella spiegazione, rimuovendo il rumore di fondo.
 
 ### Visualizzazione Interattiva
-* **Graph visualization:** I nodi vengono organizzati dinamicamente nello spazio, raggruppando visivamente elementi correlati.
-* **Navigazione Avanzata:** Supporto completo per **ingrandimento**, **selezione** e **organizzazione** per personalizzare l'esperienza utente
-* **Semantic Aura:** I nodi differiscono per colore, contorno e dimensione in base al *punteggio di confidenza* assegnato dal modello ad un determinato item.
+* **Graph visualization**: I nodi vengono organizzati dinamicamente nello spazio, raggruppando visivamente elementi correlati.
+* **Navigazione Avanzata**: Supporto completo per **ingrandimento**, **selezione** e **organizzazione** per personalizzare l'esperienza utente
+* **Semantic Aura**: I nodi differiscono per colore, contorno e dimensione in base al *punteggio di confidenza* assegnato dal modello ad un determinato item.
 
 ### Pannello di Controllo e Filtri
-* **Filtri per Tipo Entità:** L'utente può scegliere di visualizzare o nascondere specifiche categorie di nodi (es. mostrare solo *Film* e *Attori*, nascondendo *Registi* o *Generi*) tramite un pannello laterale.
-* **Soglia di Confidenza:** Un selettore permette di filtrare i risultati in base alla certezza del modello (es. mostrare solo raccomandazioni con match > 90%).
-* **Configurazione Top-K:** Slider dinamico per decidere in tempo reale quante raccomandazioni visualizzare nel grafo (da 5 a 50 item).
+* **Filtri per Tipo Entità**: L'utente può scegliere di visualizzare o nascondere specifiche categorie di nodi (es. mostrare solo *Film* e *Attori*, nascondendo *Registi* o *Generi*) tramite un pannello laterale.
+* **Soglia di Confidenza**: Un selettore permette di filtrare i risultati in base alla certezza del modello (es. mostrare solo raccomandazioni con match > 90%).
+* **Configurazione Top-K**: Slider dinamico per decidere in tempo reale quante raccomandazioni visualizzare nel grafo (da 5 a 50 item).
 
 ### Dettagli On-Demand
 * **Info Card Laterale:** Cliccando su un nodo, appare una scheda dettagliata con:
@@ -147,22 +147,22 @@ Per facilitare la navigazione, ecco una spiegazione delle tre sezioni principali
 
 #### 1. Modulo `engine/` (Backend)
 È il nucleo computazionale del sistema, responsabile del caricamento del Knowledge Graph e dell'esecuzione degli algoritmi di raccomandazione.
-* **Core Script:** Il file `generate_configurable_recs.py` carica i pesi del modello dalla cartella `models/` e processa i dati grezzi presenti in `custom_data/`.
-* **Data Processing:** Utilizza file di embedding (`.entityemb`, `.useremb`) e strutture di grafo (`.kg`) per calcolare i percorsi di raccomandazione più rilevanti.
-* **Output:** Al termine dell'esecuzione, esporta i risultati in `public/data/recommendations.json`, agendo come fornitore di dati per l'interfaccia web.
-* **Nota:** I file pesanti (come i `.pth` e gli embedding in `custom_data/`) sono tipicamente esclusi dal versionamento tramite `.gitignore` e devono essere gestiti separatamente.
+* **Core Script**: Il file `generate_configurable_recs.py` carica i pesi del modello dalla cartella `models/` e processa i dati grezzi presenti in `custom_data/`.
+* **Data Processing**: Utilizza file di embedding (`.entityemb`, `.useremb`) e strutture di grafo (`.kg`) per calcolare i percorsi di raccomandazione più rilevanti.
+* **Output**: Al termine dell'esecuzione, esporta i risultati in `public/data/recommendations.json`, agendo come fornitore di dati per l'interfaccia web.
+* **Nota**: I file pesanti (come i `.pth` e gli embedding in `custom_data/`) sono tipicamente esclusi dal versionamento tramite `.gitignore` e devono essere gestiti separatamente.
 
 #### 2. Modulo `public/` (Frontend)
 Rappresenta l'interfaccia utente interattiva (Dashboard) ed è ottimizzato per la visualizzazione di strutture dati complesse.
-* **Visualizzazione Dinamica:** Utilizza la libreria **D3.js** per trasformare i dati JSON prodotti dall'engine in un grafo interattivo esplorabile.
-* **Architettura:** Sviluppato in Vanilla JS (ES6+) per garantire prestazioni elevate nel rendering dei nodi senza il sovraccarico di framework esterni.
-* **Data Flow:** All'avvio, lo script `app.js` effettua una richiesta `fetch` verso `data/mock_recs.json`. Se il file è aggiornato, l'utente vedrà i nuovi percorsi generati dal modello.
+* **Visualizzazione Dinamica**: Utilizza la libreria **D3.js** per trasformare i dati JSON prodotti dall'engine in un grafo interattivo esplorabile.
+* **Architettura**: Sviluppato in Vanilla JS (ES6+) per garantire prestazioni elevate nel rendering dei nodi senza il sovraccarico di framework esterni.
+* **Data Flow**: All'avvio, lo script `app.js` effettua una richiesta `fetch` verso `data/mock_recs.json`. Se il file è aggiornato, l'utente vedrà i nuovi percorsi generati dal modello.
 
 #### 3. Modulo `server/` (Web Server)
 Costituisce l'infrastruttura di rete necessaria per l'esecuzione corretta dell'applicazione.
-* **Server Express:** Implementato in `server.js`, gestisce il routing delle risorse statiche e permette al browser di accedere ai file JSON superando le restrizioni di sicurezza locali (CORS).
-* **Gestione Risorse:** Assicura che i file JavaScript vengano serviti con i corretti header MIME, necessari per il funzionamento degli ES Modules utilizzati nel frontend.
-* **Scalabilità:** La struttura è predisposta per integrare API REST aggiuntive che potrebbero permettere all'utente di inviare input in tempo reale al motore Python.
+* **Server Express**: Implementato in `server.js`, gestisce il routing delle risorse statiche e permette al browser di accedere ai file JSON superando le restrizioni di sicurezza locali (CORS).
+* **Gestione Risorse**: Assicura che i file JavaScript vengano serviti con i corretti header MIME, necessari per il funzionamento degli ES Modules utilizzati nel frontend.
+* **Scalabilità**: La struttura è predisposta per integrare API REST aggiuntive che potrebbero permettere all'utente di inviare input in tempo reale al motore Python.
 
 ## 6. 🛠️ Prerequisiti e Installazione <a name="6-prerequisiti-e-installazione"></a>
 
@@ -172,27 +172,27 @@ Il progetto è composto da due muoduli principali (backend e interfaccia), per f
 Questa componente è sviluppata in Python 3.8+ e si basa sul framework Hopwise. Per garantire la riproducibilità e isolare le dipendenze, si raccomanda l'utilizzo di un ambiente virtuale.
 
 #### Requisiti di sistema
-* **OS:Linux** (testato su Ubuntu/WSL)
-* **Python:** versione 3.8 o superiore
-* **GPU:NVIDIA** con CUDA per l'addestramento
+* **OS**: Linux (testato su Ubuntu/WSL)
+* **Python**: versione 3.8 o superiore
+* **GPU**: NVIDIA con CUDA per l'addestramento
 
 ### Frontend
 
 #### Requisiti di sistema
-* **Browser: Google Chrome, Firefox o Edge**  con supporto a ES6+ e supporto a SVG
-* **Runtime: Node.js** versione 16.0 o superiore
-* **Risoluzione: 1920x1080** 
-* **Hardware Client: CPU Multicore** La simulazione fisica viene calcolata in tempo reale dal browser dell'utente, non dal server.
+* **Browser** Google Chrome, Firefox o Edge  con supporto a ES6+ e supporto a SVG
+* **Runtime** Node.js versione 16.0 o superiore
+* **Risoluzione**: 1920x1080 
+* **Hardware Client**: CPU Multicore La simulazione fisica viene calcolata in tempo reale dal browser dell'utente, non dal server.
 
 ### Guida all'Installazione
 
-1.  **Clonare il repository:**
+1.  **Clonare il repository**:
     ```bash
     git clone [https://github.com/tuo-username/tuo-progetto.git](https://github.com/tuo-username/tuo-progetto.git)
     cd tuo-progetto
     ```
 
-2.  **Creare e attivare l'ambiente virtuale:**
+2.  **Creare e attivare l'ambiente virtuale**:
     ```bash
     # Su Linux / macOS
     python3 -m venv venv
@@ -203,7 +203,7 @@ Questa componente è sviluppata in Python 3.8+ e si basa sul framework Hopwise. 
     .\venv\Scripts\Activate.ps1
     ```
 
-3.  **Installare le dipendenze:**
+3.  **Installare le dipendenze**:
     Tutte le librerie necessarie sono elencate nel file standard `requirements.txt`.
     ```bash
     pip install -r requirements.txt
@@ -300,31 +300,31 @@ L'interfaccia non serve solo a mostrare i risultati, ma è pensata per essere es
 ### 9.1 Main Canvas
 Questa è l'area principale dove vengono disegnate e visualizzate le raccomandazioni.
 
-* **Interazione Fisica:** I nodi si comportano come particelle fisiche e possono essere trascinati, può essere spostata la vista e si può zoomare per vedere i dettagli, con il layout che si riadatta automaticamente.
-* **Feedback Visivo:** Ogni nodo ha un'aura colorata che indica quanto il modello è "sicuro" di quella raccomandazione, più è tendente al verde e più è alto lo score mentre più è tendente al rosso e meno sarà alto lo score. Inoltre, i nodi più importanti "pulsano" leggermente per attirare l'attenzione.
+* **Interazione Fisica**: I nodi si comportano come particelle fisiche e possono essere trascinati, può essere spostata la vista e si può zoomare per vedere i dettagli, con il layout che si riadatta automaticamente.
+* **Feedback Visivo**: Ogni nodo ha un'aura colorata che indica quanto il modello è "sicuro" di quella raccomandazione, più è tendente al verde e più è alto lo score mentre più è tendente al rosso e meno sarà alto lo score. Inoltre, i nodi più importanti "pulsano" leggermente per attirare l'attenzione.
 
 ### 9.2 Pannelli di Controllo
 Sulla sinistra ci sono i controlli per modificare la visualizzazione senza dover ricaricare la pagina. Vengono generati via JavaScript leggendo i dati disponibili nel JSON.
 
-* **Filtri per Tipo:** Puoi accendere o spegnere intere categorie di nodi (es. nascondere i *Registi* per vedere solo i *Film*), c'è anche un tasto rapido per selezionare tutto o niente.
-* **Modalità Layout:** Cambia l'algoritmo con cui D3 dispone i nodi nello spazio:
-    * **Orbitali:** Mette l'utente al centro e gli item attorno, a distanze diverse in base alla rilevanza.
-    * **Griglia:** Dispone i nodi in una griglia ordinata, utile se ci sono molti dati.
-    * **Cluster:** Raggruppa i nodi in base alla strategia di spiegazione, ad esempio mette vicini tutti i film suggeriti per lo stesso motivo.
-* **Soglia di Rilevanza:** Un filtro rapido per escludere dalla visualizzazione i risultati con uno score al di sotto della soglia: Alta/Media/Bassa.
-* **Impostazioni Fisiche:** Impostazioni per regolare la distanza tra i nodi o quanti elementi evidenziare.
+* **Filtri per Tipo**: Puoi accendere o spegnere intere categorie di nodi (es. nascondere i *Registi* per vedere solo i *Film*), c'è anche un tasto rapido per selezionare tutto o niente.
+* **Modalità Layout**: Cambia l'algoritmo con cui D3 dispone i nodi nello spazio:
+    * **Orbitali**: Mette l'utente al centro e gli item attorno, a distanze diverse in base alla rilevanza.
+    * **Griglia**: Dispone i nodi in una griglia ordinata, utile se ci sono molti dati.
+    * **Cluster**: Raggruppa i nodi in base alla strategia di spiegazione, ad esempio mette vicini tutti i film suggeriti per lo stesso motivo.
+* **Soglia di Rilevanza**: Un filtro rapido per escludere dalla visualizzazione i risultati con uno score al di sotto della soglia: Alta/Media/Bassa.
+* **Impostazioni Fisiche**: Impostazioni per regolare la distanza tra i nodi o quanti elementi evidenziare.
 
 ### 9.3 Explainability
 Quando viene selezionato un nodo, si attivano due elementi per spiegare *perché* quell'item è stato raccomandato:
 
-1.  **Info Card:** Un pannello laterale che mostra il titolo, la percentuale di match e le entità in comune tra l'utente e l'item.
-2.  **Mini-Grafo del Percorso:** Un piccolo riquadro che isola il percorso logico esatto (es. *Utente* -> *ha visto Film A* -> *diretto da Regista X* -> *che ha fatto Film B*). Si può anche espandere a tutto schermo per analizzarlo meglio.
+1.  **Info Card**: Un pannello laterale che mostra il titolo, la percentuale di match e le entità in comune tra l'utente e l'item.
+2.  **Mini-Grafo del Percorso**: Un piccolo riquadro che isola il percorso logico esatto (es. *Utente* -> *ha visto Film A* -> *diretto da Regista X* -> *che ha fatto Film B*). Si può anche espandere a tutto schermo per analizzarlo meglio.
 
 ### 9.4 Story Mode
 Per rendere le spiegazioni più comprensibili anche a chi non è tecnico, è stata implementata anche una modalità "Story". Invece di mostrare solo dati grezzi, guida l'utente attraverso tre passaggi:
-1.  **La Raccomandazione:** Presenta l'item e quanto è compatibile.
-2.  **Il Perché:** Spiega in parole semplici la strategia usata (es. "Basato su un regista che ti piace").
-3.  **Le Connessioni:** Mostra quali elementi del Knowledge Graph collegano l'utente al risultato.
+1.  **La Raccomandazione**: Presenta l'item e quanto è compatibile.
+2.  **Il Perché**: Spiega in parole semplici la strategia usata (es. "Basato su un regista che ti piace").
+3.  **Le Connessioni**: Mostra quali elementi del Knowledge Graph collegano l'utente al risultato.
 
 ## 10. 📄 Licenza e Contatti<a name="11-licenza"></a>
 ### Licenza  
