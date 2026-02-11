@@ -118,10 +118,12 @@ Di seguito è riportato l'albero completo delle directory con una descrizione de
     │   │   ├── 📄 custom_data.kg     
     │   │   ├── 📄 *.entityemb        
     │   │   └── 📄 ... (altri file di dati)
+    │   ├── 📂 models/
+    │   │   └── 📄 PGPR-Dec-...pth
     │   └── 🐍 generate_configurable_recs.py
     │
     ├── 📂 log/PGPR               
-    │       └── 📄 PGPR-custom_data...     
+    │       └── 📄 PGPR-custom_data....log    
     │
     ├── 📂 public/                   
     │   ├── 📂 css/
@@ -210,10 +212,16 @@ Questa componente è sviluppata in Python 3.8+ e si basa sul framework Hopwise. 
     ```
 
 4. **Verifica dell'Installazione**
-Per verificare che l'ambiente sia configurato correttamente e che `hopwise` sia accessibile, eseguire:
-```bash
-python -c "import hopwise; print(f'Hopwise version installed successfully')"
-```
+   Per verificare che l'ambiente sia configurato correttamente e che `hopwise` sia accessibile, eseguire:
+   ```bash
+   python -c "import hopwise; print(f'Hopwise version installed successfully')"
+   ```
+5. **Generazione raccomandazioni**
+   Genera il file di raccomandazioni in formato JSON
+   ```bash
+   cd engine
+   python generate_configurable_recs.py
+   ```
 
 ## 7. 🧠 Configurazione del Dataset e Modello <a name="7-configurazione-del-dataset-e-modello"></a>
 
