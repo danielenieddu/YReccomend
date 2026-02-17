@@ -9,9 +9,10 @@
 5. [📂 Struttura della Repository](#5-struttura-della-repository)
 6. [🛠️ Prerequisiti e Installazione](#6-prerequisiti-e-installazione)
 7. [🧠 Configurazione del Dataset e Modello](#7-configurazione-del-dataset-e-modello)
-8. [🚀 Guida all'Avvio (Quick Start)](#8-guida-allavvio-quick-start)
-9. [🎨 Interfaccia Utente e Controlli](#9-interfaccia-utente-e-controlli)
-10. [📄 Licenza e Contatti](#11-licenza)
+8. [🚀 Guida all'Avvio](#8-guida-allavvio-quick-start)
+9. [🐳 Guida all'Avvio con Docker](#9-guida-docker)
+10. [🎨 Interfaccia Utente e Controlli](#10-interfaccia-utente-e-controlli)
+11. [📄 Licenza e Contatti](#11-licenza)
 
 ---
 ## 1. 👥 Autori <a name="1-autori"></a>
@@ -141,6 +142,9 @@ Di seguito è riportato l'albero completo delle directory con una descrizione de
     ├── 📄 package.json              
     ├── 📄 package-lock.json     
     ├── 📄 requirements.txt
+    ├── 📄 .dockerignore
+    ├── 📄 Dockerfile
+    ├── 📄 yreccomend.tar
     └── 📝 README.md                 
     
 ### Guida ai Moduli
@@ -250,7 +254,7 @@ I tre file di embeddings generati sono qui riportati:
 ### Utilizzo di altri dataset
 Il motore di ragionamento "non sa" di lavorare con film o prodotti, naviga semplicemente un grafo astratto definito dai file su cui lavora,per utilizzare un altro dataset è sufficiente rispettare la topologia dei file descritta sopra e mantenere invariata la logica di connessioene.
 
-## 8. 🚀 Guida all'Avvio (Quick Start) <a name="8-guida-allavvio-quick-start"></a>
+## 8. 🚀 Guida all'Avvio <a name="8-guida-allavvio-quick-start"></a>
 
 Per vedere il sistema in azione, segui questi passaggi nell'ordine esatto. Il flusso prevede prima la generazione dei dati tramite il motore AI (Python) e successivamente l'avvio del server di visualizzazione (Node.js).
 
@@ -284,8 +288,7 @@ Una volta generati i dati, puoi avviare il server web per visualizzarli.
     `node server.js`
 
 **Output atteso:**
-> ✅ UI pronta: http://localhost:5173
-> 📁 Servendo file statici da: .../public
+> UI pronta: http://localhost:5173
 
 ---
 
@@ -301,17 +304,44 @@ Se desideri visualizzare le raccomandazioni per un **Utente diverso**:
 2.  Riesegui `python inference.py`.
 3.  Aggiorna la pagina web (F5).
 
-## 9. 🎨 Interfaccia Utente e Controlli <a name="9-interfaccia-utente-e-controlli"></a>
+## 9. 🐳 Guida all'Avvio con Docker <a name="9-guida-docker"></a>
+
+Se preferisci non installare Node.js o vuoi testare l'applicazione in un ambiente isolato, puoi utilizzare Docker in modo tale da avviare automaticamente il server web con i dati pre-caricati.
+
+###9.1 Caricamento e Avvio
+Assicurati di avere **Docker Desktop** installato e attivo.
+Apri il terminale nella cartella ed esegui:
+
+1.  **Importa l'immagine:**
+    ```bash
+    docker load -i yreccomend.tar
+    ```
+    *(Attendi il messaggio di conferma)*
+
+2.  **Avvia il container:**
+    ```bash
+    docker run -p 5173:5173 yreccomend
+    ```
+
+*Assicurati che la porta 5173 non sia occupata*
+
+### 🌐 9.2 Accesso
+Una volta avviato, apri il tuo browser preferito e visita:
+👉 **http://localhost:5173**
+
+> **Nota:** Il container Docker funge da "Visualizzatore Interattivo", contiene una copia statica dei dati presenti in `mock_recs.json` impacchettati al momento della creazione del file `.tar`.
+
+## 10. 🎨 Interfaccia Utente e Controlli <a name="10-interfaccia-utente-e-controlli"></a>
 
 L'interfaccia non serve solo a mostrare i risultati, ma è pensata per essere esplorabile ed interattiva: è strutturata in modo dinamico con **D3.js**, gestendo la visualizzazione dei nodi e delle relazioni in tempo reale direttamente nel browser.
 
-### 9.1 Main Canvas
+### 10.1 Main Canvas
 Questa è l'area principale dove vengono disegnate e visualizzate le raccomandazioni.
 
 * **Interazione Fisica**: I nodi si comportano come particelle fisiche e possono essere trascinati, può essere spostata la vista e si può zoomare per vedere i dettagli, con il layout che si riadatta automaticamente.
 * **Feedback Visivo**: Ogni nodo ha un'aura colorata che indica quanto il modello è "sicuro" di quella raccomandazione, più è tendente al verde e più è alto lo score mentre più è tendente al rosso e meno sarà alto lo score. Inoltre, i nodi più importanti "pulsano" leggermente per attirare l'attenzione.
 
-### 9.2 Pannelli di Controllo
+### 10.2 Pannelli di Controllo
 Sulla sinistra ci sono i controlli per modificare la visualizzazione senza dover ricaricare la pagina. Vengono generati via JavaScript leggendo i dati disponibili nel JSON.
 
 * **Filtri per Tipo**: Puoi accendere o spegnere intere categorie di nodi (es. nascondere i *Registi* per vedere solo i *Film*), c'è anche un tasto rapido per selezionare tutto o niente.
@@ -322,19 +352,19 @@ Sulla sinistra ci sono i controlli per modificare la visualizzazione senza dover
 * **Soglia di Rilevanza**: Un filtro rapido per escludere dalla visualizzazione i risultati con uno score al di sotto della soglia: Alta/Media/Bassa.
 * **Impostazioni Fisiche**: Impostazioni per regolare la distanza tra i nodi o quanti elementi evidenziare.
 
-### 9.3 Explainability
+### 10.3 Explainability
 Quando viene selezionato un nodo, si attivano due elementi per spiegare *perché* quell'item è stato raccomandato:
 
 1.  **Info Card**: Un pannello laterale che mostra il titolo, la percentuale di match e le entità in comune tra l'utente e l'item.
 2.  **Mini-Grafo del Percorso**: Un piccolo riquadro che isola il percorso logico esatto (es. *Utente* -> *ha visto Film A* -> *diretto da Regista X* -> *che ha fatto Film B*). Si può anche espandere a tutto schermo per analizzarlo meglio.
 
-### 9.4 Story Mode
+### 10.4 Story Mode
 Per rendere le spiegazioni più comprensibili anche a chi non è tecnico, è stata implementata anche una modalità "Story". Invece di mostrare solo dati grezzi, guida l'utente attraverso tre passaggi:
 1.  **La Raccomandazione**: Presenta l'item e quanto è compatibile.
 2.  **Il Perché**: Spiega in parole semplici la strategia usata (es. "Basato su un regista che ti piace").
 3.  **Le Connessioni**: Mostra quali elementi del Knowledge Graph collegano l'utente al risultato.
 
-## 10. 📄 Licenza e Contatti<a name="11-licenza"></a>
+## 11. 📄 Licenza e Contatti<a name="11-licenza"></a>
 ### Licenza  
 Questo software è rilasciato sotto licenza **MIT**.
 Libertà di utilizzare, modificare e distribuire questo codice per scopi accademici, personali o commerciali, a condizione di includere l'attribuzione originale agli autori (**Alessandro Bullegas** e **Daniele Nieddu**).
