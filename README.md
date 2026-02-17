@@ -308,7 +308,7 @@ Se desideri visualizzare le raccomandazioni per un **Utente diverso**:
 
 Se preferisci non installare Node.js o vuoi testare l'applicazione in un ambiente isolato, puoi utilizzare Docker in modo tale da avviare automaticamente il server web con i dati pre-caricati.
 
-###9.1 Caricamento e Avvio
+### 9.1 Caricamento e Avvio
 Assicurati di avere **Docker Desktop** installato e attivo.
 Apri il terminale nella cartella ed esegui:
 
@@ -325,7 +325,7 @@ Apri il terminale nella cartella ed esegui:
 
 *Assicurati che la porta 5173 non sia occupata*
 
-### 🌐 9.2 Accesso
+### 9.2 Accesso
 Una volta avviato, apri il tuo browser preferito e visita:
 👉 **http://localhost:5173**
 
