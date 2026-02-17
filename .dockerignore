@@ -1,0 +1,15 @@
+node_modules
+.git
+.gitignore
+README.md
+requirements.txt
+venv
+__pycache__
+
+*.py
+*.pth
+*.log
+
+
+custom_data
+hopwise
