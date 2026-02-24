@@ -50,22 +50,18 @@ Il progetto **YReccomend** è costruito su un'architettura modulare a tre livell
 Il livello di presentazione è responsabile della visualizzazione del **Knowledge Graph** e dell'interazione con l'utente finale.
 
 * **Tecnologia:** HTML5, CSS3, Vanilla JavaScript con **D3.js**.
-* **Funzioni Chiave:**
-    * **Visualizzazione Grafica**:Dispone i nodi come degli item nello spazio in modo organico, minimizzando le sovrapposizioni.
-    * **Interattività**: Gestisce eventi complessi come Zoom, Riorganizzazione, Selezione e Hover dei nodi per un' esperienza più personalizzabile.
-    * **Filtraggio Dinamico:** Permette di nascondere o mostrare intere categorie di nodi (es. Attori, Registi) senza ricaricare la pagina.
+* **Visualizzazione Grafica**:Dispone i nodi come degli item nello spazio in modo organico, minimizzando le sovrapposizioni.
+* **Interattività**: Gestisce eventi complessi come Zoom, Riorganizzazione, Selezione e Hover dei nodi per un' esperienza più personalizzabile.
+* **Filtraggio Dinamico:** Permette di nascondere o mostrare intere categorie di nodi (es. Attori, Registi) senza ricaricare la pagina.
 
 
-#### B. Agente di Raccomandazione (???)
-Il cuore computazionale del sistema, dove risiede la logica di raccomandazione profonda.
+#### B. Agente di Raccomandazione
+Il cuore computazionale del sistema, dove risiede la logica di raccomandazione vera e propria.
 
 * **Tecnologia:** **Python 3**, **PyTorch**, **NumPy**, **Pandas**.
 * **Modello**: PGPR
-* **Funzioni Chiave**:
-    * **Data Loading**: Analizza e carica in memoria i file atomici del formato RecBole (`.inter`, `.kg`, `.item`) ricostruendo la topologia del grafo.
-    * **Model Loading**: Inizializza la rete neurale caricando i tensori dei pesi pre-addestrati dal file `.pth`.
-    * **Path Reasoning**: Esegue l'algoritmo di ricerca su grafo per identificare i percorsi che collegano l'utente agli item target (es. *Utente -> ha visto Film A -> diretto da Regista X -> che ha diretto Film B*).
-    * **JSON Export**: Serializza l'output in un formato JSON ottimizzato per il web, includendo metadati, score normalizzati e la struttura gerarchica della spiegazione.
+* Esegue l'algoritmo di ricerca su grafo per identificare i percorsi che collegano l'utente agli item target (es. *Utente -> ha visto Film A -> diretto da Regista X -> che ha diretto Film B*).
+    
 
 ### Ciclo di Vita di una Raccomandazione
 
