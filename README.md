@@ -102,9 +102,7 @@ YReccomend non è una semplice lista di film suggeriti, ma uno strumento di espl
 
 ## 5. 📂 Struttura della Repository <a name="5-struttura-della-repository"></a>
 
-L'organizzazione del codice è stata progettata seguendo il principio della **Separation of Concerns (SoC)**. Il progetto è suddiviso in tre macro-aree logiche distinte che comunicano tra loro attraverso file di configurazione e dati JSON.
-
-Di seguito è riportato l'albero completo delle directory con una descrizione dettagliata di ogni componente:
+Di seguito è riportato l'albero completo delle directory:
 
     YReccomend/
     ├── 📂 engine/                   
@@ -142,29 +140,6 @@ Di seguito è riportato l'albero completo delle directory con una descrizione de
     ├── 📄 Dockerfile
     ├── 📄 yreccomend.tar
     └── 📝 README.md                 
-    
-### Guida ai Moduli
-
-Per facilitare la navigazione, ecco una spiegazione delle tre sezioni principali che compongono l'architettura del progetto:
-
-#### 1. Modulo `engine/` (Backend)
-È il nucleo computazionale del sistema, responsabile del caricamento del Knowledge Graph e dell'esecuzione degli algoritmi di raccomandazione.
-* **Core Script**: Il file `generate_configurable_recs.py` carica i pesi del modello dalla cartella `models/` e processa i dati grezzi presenti in `custom_data/`.
-* **Data Processing**: Utilizza file di embedding (`.entityemb`, `.useremb`) e strutture di grafo (`.kg`) per calcolare i percorsi di raccomandazione più rilevanti.
-* **Output**: Al termine dell'esecuzione, esporta i risultati in `public/data/recommendations.json`, agendo come fornitore di dati per l'interfaccia web.
-* **Nota**: I file pesanti (come i `.pth` e gli embedding in `custom_data/`) sono tipicamente esclusi dal versionamento tramite `.gitignore` e devono essere gestiti separatamente.
-
-#### 2. Modulo `public/` (Frontend)
-Rappresenta l'interfaccia utente interattiva (Dashboard) ed è ottimizzato per la visualizzazione di strutture dati complesse.
-* **Visualizzazione Dinamica**: Utilizza la libreria **D3.js** per trasformare i dati JSON prodotti dall'engine in un grafo interattivo esplorabile.
-* **Architettura**: Sviluppato in Vanilla JS (ES6+) per garantire prestazioni elevate nel rendering dei nodi senza il sovraccarico di framework esterni.
-* **Data Flow**: All'avvio, lo script `app.js` effettua una richiesta `fetch` verso `data/mock_recs.json`. Se il file è aggiornato, l'utente vedrà i nuovi percorsi generati dal modello.
-
-#### 3. Modulo `server/` (Web Server)
-Costituisce l'infrastruttura di rete necessaria per l'esecuzione corretta dell'applicazione.
-* **Server Express**: Implementato in `server.js`, gestisce il routing delle risorse statiche e permette al browser di accedere ai file JSON superando le restrizioni di sicurezza locali (CORS).
-* **Gestione Risorse**: Assicura che i file JavaScript vengano serviti con i corretti header MIME, necessari per il funzionamento degli ES Modules utilizzati nel frontend.
-* **Scalabilità**: La struttura è predisposta per integrare API REST aggiuntive che potrebbero permettere all'utente di inviare input in tempo reale al motore Python.
 
 ## 6. 🛠️ Prerequisiti e Installazione <a name="6-prerequisiti-e-installazione"></a>
 
@@ -231,11 +206,11 @@ Il modello PGPR (Policy-Guided Path Reasoning) è un agente di Reinforcement Lea
 
 Questi file definiscono le connessioni fisiche tra le entità. Si trovano nella cartella `dataset/custom` e devono seguire il formato **RecBole**, i file nello specifico sono i seguenti:
 
-* **`custom_data.kg`**: Definisce la struttura del ambiente di cui volgiamo fornire le raccomandazioni, è una lista di triplette **testa->relazione->coda** (es. *Film -> Diretto da -> Regista*).
+* **`custom_data.kg`**: Definisce la struttura del ambiente di cui volgiamo fornire le raccomandazioni, è una lista di triple **testa->relazione->coda** (es. *Film -> Diretto da -> Regista*).
 * **`custom_data.inter`**: Contiene lo storico delle interazioni (User ID, Item ID, Rating/Click) ed è la base per calcolare le preferenze dell'utente, sono coppie **UserID <-> ItemID** con associato un rating.
 * **`custom_data.item`**: Serve a mappare gli ID interni di Hopwise con quelli delle entità del Knowldge Graph, si utilizza per associare un'etichetta leggibile (es. titolo del film) agli ID numerici delle raccomandazioni.
 * **`custom_data.link`**:File indispensabile se gli ID degli oggetti nel file interazioni (`item_id`) differiscono dagli ID nel Knowledge Graph (`entity_id`). Agisce come un dizionario per dire al modello che l'item X corrisponde al nodo Y nel grafo.
-* **`custom_data.user`**: Contiene le feature esplicite di ogni utente (età, sesso, ocupazione, etc.), questo file nel nostro modello è opzionale, è utile qualora si volessero definire regole basate sulla demografia.
+* **`custom_data.user`**: Contiene le feature esplicite di ogni utente (età, sesso, ocupazione, etc.).
 
 
 ###  7.2 Configurazione Semantica
@@ -263,7 +238,7 @@ L'interfaccia web legge i dati pre-calcolati dal JSON. Prima di avviare il sito,
 2.  (Opzionale) Attiva il tuo ambiente virtuale Python (vedi Sezione 6).
 
 3.  Esegui lo script di inferenza:
-    `python inference.py`
+    `python generate_configurable_recs.py`
 
 **Cosa succede in background?**
 * Lo script carica il modello `.pth` e la struttura del Knowledge Graph.
@@ -276,7 +251,7 @@ L'interfaccia web legge i dati pre-calcolati dal JSON. Prima di avviare il sito,
 ### 🌐 8.2 Passo 2: Avviare l'Interfaccia (Node.js)
 Una volta generati i dati, puoi avviare il server web per visualizzarli.
 
-1.  Apri un **nuovo terminale** (o torna alla cartella principale).
+1.  Apri un **nuovo terminale**
 2.  Spostati nella cartella `server`:
     `cd server`
 
@@ -291,14 +266,14 @@ Una volta generati i dati, puoi avviare il server web per visualizzarli.
 ### 🖥️ 8.3 Passo 3: Esplorazione
 1.  Apri il browser (Chrome, Firefox o Edge).
 2.  Digita l'indirizzo: **http://localhost:5173**
-3.  Il grafo interattivo apparirà automaticamente, mostrando le raccomandazioni generate al Passo 1.
+3.  Il grafo interattivo apparirà automaticamente, mostrando le raccomandazioni.
 
 ### ⚠️ Nota Importante sul Workflow
 Attualmente il sistema opera in modalità **Batch**: l'interfaccia visualizza l'ultimo snapshot di dati generato.
 Se desideri visualizzare le raccomandazioni per un **Utente diverso**:
-1.  Modifica l'ID utente nello script `engine/inference.py` (o passalo come argomento se configurato).
-2.  Riesegui `python inference.py`.
-3.  Aggiorna la pagina web (F5).
+1.  Modifica l'ID utente nello script `engine/generate_configurable_recs.py`.
+2.  Riesegui `python generate_configurable_recs.py`.
+3.  Aggiorna la pagina web.
 
 ## 9. 🐳 Guida all'Avvio con Docker <a name="9-guida-docker"></a>
 
@@ -344,12 +319,12 @@ Sulla sinistra ci sono i controlli per modificare la visualizzazione senza dover
 * **Modalità Layout**: Cambia l'algoritmo con cui D3 dispone i nodi nello spazio:
     * **Orbitali**: Mette l'utente al centro e gli item attorno, a distanze diverse in base alla rilevanza.
     * **Griglia**: Dispone i nodi in una griglia ordinata, utile se ci sono molti dati.
-    * **Cluster**: Raggruppa i nodi in base alla strategia di spiegazione, ad esempio mette vicini tutti i film suggeriti per lo stesso motivo.
+    * **Cluster**: Raggruppa i nodi in base alla strategia di spiegazione, mette vicini tutti i film suggeriti per lo stesso motivo.
 * **Soglia di Rilevanza**: Un filtro rapido per escludere dalla visualizzazione i risultati con uno score al di sotto della soglia: Alta/Media/Bassa.
 * **Impostazioni Fisiche**: Impostazioni per regolare la distanza tra i nodi o quanti elementi evidenziare.
 
 ### 10.3 Explainability
-Quando viene selezionato un nodo, si attivano due elementi per spiegare *perché* quell'item è stato raccomandato:
+Quando viene selezionato un nodo, si attivano due elementi per spiegare perché quell'item è stato raccomandato:
 
 1.  **Info Card**: Un pannello laterale che mostra il titolo, la percentuale di match e le entità in comune tra l'utente e l'item.
 2.  **Mini-Grafo del Percorso**: Un piccolo riquadro che isola il percorso logico esatto (es. *Utente* -> *ha visto Film A* -> *diretto da Regista X* -> *che ha fatto Film B*). Si può anche espandere a tutto schermo per analizzarlo meglio.
