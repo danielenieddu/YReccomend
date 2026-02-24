@@ -36,7 +36,7 @@ L'obiettivo è fornire raccomandazioni non solo accurate, ma **trasparenti e spi
 
 ## 3. 🏗️ Architettura del Sistema <a name="3-architettura-del-sistema"></a>
 
-Il progetto **YReccomend** è costruito su un'architettura modulare a tre livelli, progettata per disaccoppiare l'interfaccia utente dalla logica di calcolo del modello. Questa struttura garantisce scalabilità, manutenibilità e una chiara separazione delle responsabilità tra visualizzazione e ragionamento e, non essendo vincolata ad un modello preciso è pensata per adattarsi a diversi modelli di raccomandazione.
+Il progetto **YReccomend** è costruito su un'architettura modulare a due livelli, progettata per disaccoppiare l'interfaccia utente dalla logica di calcolo del modello. Questa struttura garantisce scalabilità, manutenibilità e una chiara separazione delle responsabilità tra visualizzazione e ragionamento e, non essendo vincolata ad un modello preciso è pensata per adattarsi a diversi modelli di raccomandazione.
 
 ### Flusso dei Dati
 
