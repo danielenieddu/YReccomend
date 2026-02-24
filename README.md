@@ -49,10 +49,10 @@ Il progetto **YReccomend** è costruito su un'architettura modulare a due livell
 #### A. Frontend
 Il livello di presentazione è responsabile della visualizzazione del **Knowledge Graph** e dell'interazione con l'utente finale.
 
-* **Tecnologia:** HTML5, CSS3, Vanilla JavaScript con **D3.js**.
+* **Tecnologia**: HTML5, CSS3, Vanilla JavaScript con **D3.js**.
 * **Visualizzazione Grafica**:Dispone i nodi come degli item nello spazio in modo organico, minimizzando le sovrapposizioni.
-* **Interattività**: Gestisce eventi complessi come Zoom, Riorganizzazione, Selezione e Hover dei nodi per un' esperienza più personalizzabile.
-* **Filtraggio Dinamico:** Permette di nascondere o mostrare intere categorie di nodi (es. Attori, Registi) senza ricaricare la pagina.
+* **Interattività**: Gestisce eventi complessi come zoom, riorganizzazione, selezione e hover dei nodi per un' esperienza più personalizzabile.
+* **Filtraggio Dinamico**: Permette di nascondere o mostrare intere categorie di nodi (es. Attori, Registi) senza ricaricare la pagina.
 
 
 #### B. Agente di Raccomandazione
