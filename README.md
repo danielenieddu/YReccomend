@@ -65,11 +65,11 @@ Il cuore computazionale del sistema, dove risiede la logica di raccomandazione v
 
 ### Ciclo di Vita di una Raccomandazione
 
-1.  **Avvio**: Lo script di inferenza `inference.py` viene eseguito.
+1.  **Avvio**: Lo script di inferenza `generate_configurable_recs.py` viene eseguito.
 2.  **Elaborazione**: Il modello esplora il Knowledge Graph per un determinato `User_ID` target, selezionando i `Top_K` item con il punteggio di compatibilità più alto.
 3.  **Costruzione Spiegazione**: Per ogni raccomandazione identificata, il sistema estrae il percorso semantico più forte che giustifica la scelta.
-4.  **Pubblicazione**: I dati elaborati vengono scritti su disco nel percorso `public/data/recommendations.json`.
-5.  **Fruizione**: L'utente apre l'interfaccia web; il browser scarica il nuovo JSON e l'interfaccia "disegna" la storia dietro ogni raccomandazione in tempo reale.
+4.  **Pubblicazione**: I dati elaborati vengono scritti su disco nel percorso `public/data/mock_recs.json`.
+5.  **Fruizione**: L'utente apre l'interfaccia web e tramite il JSON l'interfaccia "disegna" la storia dietro ogni raccomandazione in tempo reale.
 
 ## 4. ✨ Funzionalità Principali <a name="4-funzionalità-principali"></a>
 
