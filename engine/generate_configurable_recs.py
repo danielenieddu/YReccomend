@@ -15,7 +15,7 @@ OUTPUT_PATH = os.path.join(BASE_DIR, "..", "public", "data", "mock_recs.json")
 ITEM_FILE_NAME = "custom_data.item"
 
 TARGET_USER_ID = 2 
-DESIRED_TOP_K = 50
+TOP_K = 50
 
 def load_config(config_path):
     if not os.path.exists(config_path):
@@ -54,8 +54,8 @@ domain_config = load_config(CONFIG_FILE)
 print(f"Caricamento modello...")
 config, model, dataset, train_data, valid_data, test_data = load_data_and_model(model_file=CHECKPOINT_PATH)
 
-config['topk'] = [DESIRED_TOP_K]
-if hasattr(model, 'topk'): model.topk = [DESIRED_TOP_K]
+config['topk'] = [TOP_K]
+if hasattr(model, 'topk'): model.topk = [TOP_K]
 
 item_token_to_title = {}
 try:
@@ -151,7 +151,7 @@ print(f"Generazione per User {TARGET_USER_ID}...")
 uid_series = torch.tensor([TARGET_USER_ID]).to(config['device'])
 explanations_df = full_sort_explanations(uid_series, model, test_data, device=config['device'])
 
-top_recs = explanations_df.head(DESIRED_TOP_K).copy()
+top_recs = explanations_df.head(TOP_K).copy()
 top_recs['norm_score'] = normalize_scores_float(top_recs)
 
 final_json = {
